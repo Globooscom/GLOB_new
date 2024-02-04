@@ -107,7 +107,6 @@ import '../../../public/styles/ForRealtors.css'
           <p>{{ language.main[36] }}</p>
         </div>
       </div>
-      <button>Зарегистрироваться бесплатно</button>
     </div>
   </section>
 
