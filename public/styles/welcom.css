@@ -95,16 +95,12 @@ header .lines-animations {
     opacity: 0.9;
 }
 .modal {
-    /* position: absolute; */
     z-index: 101;
     padding: 4.010416666666667vw 4.34375vw;
-    background: #3B3A45;
+    background: white;
     border-radius: 0.2604166666666667vw;
     width: 100%;
     max-width: 37.6875vw;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .modal h2 {
@@ -115,7 +111,7 @@ header .lines-animations {
     line-height: 2.6354166666666665vw;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #255ECC;
 }
 
 .modal a {
@@ -125,7 +121,7 @@ header .lines-animations {
 }
 
 .modal button:not(.login-ref) {
-    background: #9657EC;
+    background: #255ECC;
     width: 100%;
     border: 0;
     font-family: 'Nekst';
@@ -149,7 +145,7 @@ header .lines-animations {
     line-height: 1.25vw;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #255ECC;
     opacity: 0.6;
     text-decoration: none;
     margin-top: 1.8229166666666667vw;
@@ -161,7 +157,6 @@ header .lines-animations {
     text-align: center;
     background: #FFFFFF;
     border-radius: 0.2604166666666667vw;
-    border: 0;
     outline: none;
     margin: 0.2604166666666667vw 0;
     font-family: 'Nekst';
@@ -171,6 +166,10 @@ header .lines-animations {
     line-height: 1.25vw;
     display: flex;
     align-items: center;
+    border: 1px solid #255ECC !important;
+}
+.modal.reg input:focus , .modal.reg input:active{
+  border: 1px solid #255ECC ;
 }
 
 .modal.reg {
@@ -187,7 +186,7 @@ header .lines-animations {
    border-radius: 1.56vw;
 }
 .modal input::placeholder {
-    color: #9657EC;
+    color: black;
 }
 .modal.choise .btns{
     display: flex;
@@ -226,22 +225,24 @@ header .logIn.active .select-login {
 }
 
 header .logIn .select-login {
-    position: absolute;
-    width: 148px;
-    left: -46px;
-    top: -15px;
-    height: auto;
-    border-radius:8px;
-    z-index: 17;
+  position: absolute;
+  width: 243px;
+  left: -95px;
+  top: 96px;
+  height: auto;
+  border-radius: 8px;
+  z-index: 17;
+  background: white;
+  padding: 15px;
 }
 
 header .logIn button:not(.login):nth-child(1) {
-    margin-top: 4.6875vw;
+    margin-top: 0;
 }
 
 header .logIn button:not(.login) {
     height: 2.7083333333333335vw;
-    background: #3B3A45;
+    background: #255ECC;
     border-radius: 0.15625vw;
     font-family: 'Nekst';
     font-style: normal;
@@ -251,9 +252,9 @@ header .logIn button:not(.login) {
     text-align: center;
     color: #FFFFFF;
     width: 100%;
-    max-width: 8.75vw;
     display: block;
     margin: 0.78125vw auto;
+  margin-bottom: 0;
     cursor: pointer;
 }
 header ul li.user {
@@ -356,6 +357,7 @@ header {
 .welcom .row-info .right .line span{
   display: block;
   margin-right: 22px;
+  white-space: nowrap;
 }
 .welcom .row-info .right .line span:first-of-type{
   margin-left: 12px;
@@ -366,13 +368,19 @@ header {
 
 .modal.reg .select-title{
     padding: .825vw;
+   border: 2px solid #255ECC !important;
+   border-radius: 4px;
 }
 .modal.reg .select-title span  {
     font-size: 0.833vw;
     line-height: 0.833vw;
-}
+    color: #255ECC !important;
 
-/**rowInfo*/
+}
+.modal.reg  .hover__select{
+  color: #255ECC !important;
+}
+  /**rowInfo*/
 .rowInfo{
   background: #F5F5F5;
   padding: 25px 0px;
@@ -563,7 +571,147 @@ header {
 }
 @media  (min-width: 1000px) and (max-width: 1400px) {
   .container{
-    margin: 0px 100px;
+    width: calc(100% - 150px);
+  }
+  .grid-info-row {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  header ul li.btns {
+    display: none;
+  }
+
+  header ul li.ref-soc {
+    display: none;
+  }
+
+  header .lang span {
+    font-size: 4.375vw; /* (значение px / 320) * 100 */
+    line-height: 5vw; /* (значение px / 320) * 100 */
+  }
+
+  header .lang {
+    margin-right: 8.75vw; /* (значение px / 320) * 100 */
+    margin-left: auto;
+    padding-top: 3vw;
+  }
+
+  header ul li.user {
+    display: block;
+    width: 6.875vw; /* (значение px / 320) * 100 */
+    height: 6.875vw; /* (значение px / 320) * 100 */
+  }
+
+  .modal {
+    padding: 7.1875vw;
+    width: calc(100% - 25vw);
+    max-width: none;
+  }
+
+  .modal.lodinn-btns .modal-contant {
+    background: white;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 4.6875vw; /* (значение px / 320) * 100 */
+  }
+
+  .modal button {
+    font-size: 3.75vw;
+    padding: 4.0625vw;
+    line-height: 5vw;
+  }
+
+  .modal h2 {
+    text-align: center;
+    font-size: 6.25vw;
+    line-height: 8.125vw;
+    margin-bottom: 10vw;
+  }
+
+  .modal input {
+    height: 11.875vw;
+    margin: 0;
+    font-size: 3.75vw;
+    line-height: 4.375vw;
+    margin-bottom: -4.6875vw;
+  }
+
+  .modal form div{
+    height: 11.875vw;
+    padding: 0;
+  }
+  .modal div.flex{
+    height: 11.875vw;
+    padding: 0;
+  }
+  .modal a {
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+
+  .modala {
+    display: block;
+    text-align: center;
+    margin-top: 15.625vw;
+  }
+
+  .modal button:not(.login-ref) {
+    background: #255ECC;
     width: 100%;
+    border: 0;
+    font-family: 'Nekst';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.375vw;
+    line-height: 8.125vw;
+    color: #FFFFFF;
+    display: block;
+    padding: 1.875vw;
+    text-align: center;
+    border-radius: 1.5625vw;
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  header .lang .select {
+    width: 13.75vw;
+    left: calc(50% - 4.6875vw);
+    text-align: center;
+    padding-top: 13.4375vw;
+    top: 0;
+  }
+
+  header ul {
+    grid-template-columns: 32.8125vw 1fr auto;
+  }
+
+  header .lang {
+    margin-left: auto;
+  }
+  .modal.reg {
+    padding: 8.75vw;
+  }
+  .modal.reg input {
+    height: 9.87vw;
+  }
+  .modal.reg .select {
+    height: auto;
+  }
+  .modal.reg .select-title{
+    padding: 3.75vw;
+  }
+  .modal button:not(.login-ref) {
+    background: #255ECC;
+  }
+  .modal.reg .select-title span  {
+    font-size: 3vw;
+    line-height: 3vw;
   }
 }
