@@ -9,8 +9,8 @@ body.fix{
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0px 5.208vw;
+    margin: 0 auto; 
+    max-width: 1200px; 
     overflow: hidden;
 }
 

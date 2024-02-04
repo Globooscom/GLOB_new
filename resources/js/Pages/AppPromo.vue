@@ -47,323 +47,164 @@ import '../../../public/styles/ForRealtors.css'
     </div>
     <div @click="mobileModal = !mobileModal" class="absolute bg-black opacity-50 h-full w-full z-40"></div>
   </div>
-  <!--welcom-->
-  <section id="welcom">
+
+  <section class="welcom">
+
     <div class="container">
-      <div class="welcom-cont">
+      <h1>Сервис №1 для профессионалов рынка
+        зарубежной недвижимости</h1>
+      <div class="row-info">
         <div class="left">
-          <h4 class="title"><img src="images/img/welcom/Mask.png" alt="" srcset=""> <span>{{ language.main[23] }}</span>
-          </h4>
-          <h1 id="text">{{ welcomText.text }}</h1>
-          <p v-html="language.main[28]">
-
-          </p>
-          <button v-on:click="openRegister = !openRegister">{{ language.main[29] }}</button>
-          <div class="save-prog">
-            <p>
-              <span>{{ language.main[30] }}</span>
-              <a href="https://apps.apple.com/ru/app/evon/id6450259354" target="_blank"
-                class="flex gap-[1vw]">
-                <img src="images/img/welcom/apl.png" alt="" srcset="">
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=ru.alfa.evonnew" target="_blank"
-                class="flex gap-[1vw]">
-                <img src="images/img/welcom/andr.png" alt="" srcset="">
-              </a>
-            </p>
+          <div class="top">
+            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.5 44.3859L24.7828 43.5093C24.3047 42.8718 12.1125 28.6078 12.1125 20.0812C12.1125 12.6703 18.1687 6.69373 25.5 6.69373C32.8312 6.69373 38.8875 12.75 38.8875 20.0812C38.8875 28.6078 26.6953 42.9515 26.2172 43.5093L25.5 44.3859ZM25.5 8.52654C19.125 8.52654 14.025 13.7062 14.025 20.0015C14.025 26.6953 22.8703 38.0906 25.5 41.3578C28.1297 38.0906 36.975 26.775 36.975 20.0015C36.975 13.7062 31.875 8.52654 25.5 8.52654Z" fill="#255ECC"/>
+              <path d="M25.5 25.1812C22.7109 25.1812 20.4 22.8703 20.4 20.0812C20.4 17.2921 22.7109 14.9812 25.5 14.9812C28.289 14.9812 30.6 17.2921 30.6 20.0812C30.6 22.8703 28.289 25.1812 25.5 25.1812ZM25.5 16.8937C23.7468 16.8937 22.3125 18.3281 22.3125 20.0812C22.3125 21.8343 23.7468 23.2687 25.5 23.2687C27.2531 23.2687 28.6875 21.8343 28.6875 20.0812C28.6875 18.3281 27.2531 16.8937 25.5 16.8937Z" fill="#255ECC"/>
+            </svg>
+            <h3>Турция</h3>
           </div>
-
-          <div class="ref-soc">
-            <a href="https://wa.me/+905442258559" target="_blank"><img src="images/img/header/s1.png" alt=""
-                srcset=""></a>
-<!--            <a href="https://m.facebook.com/people/EVON/100092335686616/" target="_blank"><img-->
-<!--                src="images/img/header/s2.png" alt="" srcset=""></a>-->
-            <a href="https://t.me/evon_turkey" target="_blank"><img src="images/img/header/s3.png" alt=""
-                srcset=""></a>
-            <a href="https://instagram.com/evon_platform_tr?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img
-                src="images/img/header/s4.png" alt="" srcset=""></a>
-          </div>
-
-          <h4 class="scroll">
-            <span>{{ language.main[31] }}</span>
-            <img src="images/img/welcom/Vector.png" alt="" srcset="">
-            <img src="images/img/welcom/Vector.png" alt="" srcset="">
-            <img src="images/img/welcom/Vector.png" alt="" srcset="">
-          </h4>
-        </div>
-        <div class="right">
-          <div class="contant">
-            <div class="btn" v-for="n in 80" :key="n" @mouseenter="hideBtn" @mouseleave="showBtn">
-              <img src="images/img/welcom/plus.png" alt="" srcset="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lines-animations">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>
-  </section>
-  <!--!welcom-->
-
-
-  <!--watchvideo-->
-  <section id="watchvideo">
-    <div class="container">
-      <div class="title-text">
-        <h2>{{ language.main[32] }} — {{ language.main[32] }} — {{ language.main[32] }} — {{ language.main[32] }} — {{
-          language.main[32] }} —</h2>
-
-      </div>
-      <iframe v-if="selectLanguage!=2" class="video" src="https://www.youtube.com/embed/lTNZFH-CZWc" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <iframe v-else class="video"  width="560" height="315" src="https://www.youtube.com/embed/EGsUvgFSEFc" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-
-    <img class="low-t" src="images/img/watchvideo/t.png" alt="" srcset="">
-    <img class="low-h1" src="images/img/watchvideo/h1.png" alt="" srcset="">
-    <img class="low-h2" src="images/img/watchvideo/h2.png" alt="" srcset="">
-  </section>
-  <!--!watchvideo-->
-
-  <!--blockInfo-->
-  <section id="blockInfo">
-    <div class="container">
-      <div class="carusel-obertka">
-        <div class="carusel">
-          <template v-for="n in 40">
-            <img src="images/img/carusel/1.png" alt="" srcset="">
-            <img src="images/img/carusel/2.png" alt="" srcset="">
-            <img src="images/img/carusel/3.png" alt="" srcset="">
-            <img src="images/img/carusel/4.png" alt="" srcset="">
-          </template>
-        </div>
-      </div>
-
-      <div class="contant">
-        <div class="left">
-          <div class="block">
-            <h4>{{ count_house }}</h4>
-            <p>{{ language.main[34] }}</p>
-          </div>
-          <div class="block">
-            <h4>{{ count_people }}</h4>
-            <p>{{ language.main[35] }}</p>
-          </div>
-          <div class="block">
-            <h4>{{ count_flats }}</h4>
-            <p>{{ language.main[36] }}</p>
+          <div class="line">
+            <span>Стамбул</span>
+            <span>Аланья</span>
+            <span>Анталья</span>
+            <span>Мерсин</span>
           </div>
         </div>
         <div class="right">
-          <p v-html="language.main[33]">
-
-          </p>
+          <div class="top">
+            <h3>Soon</h3>
+          </div>
+          <div class="line">
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.5 33.9422L18.9516 33.2719C18.5859 32.7844 9.2625 21.8766 9.2625 15.3563C9.2625 9.68909 13.8937 5.11877 19.5 5.11877C25.1062 5.11877 29.7375 9.75003 29.7375 15.3563C29.7375 21.8766 20.4141 32.8453 20.0484 33.2719L19.5 33.9422ZM19.5 6.52034C14.625 6.52034 10.725 10.4813 10.725 15.2953C10.725 20.4141 17.4891 29.1281 19.5 31.6266C21.5109 29.1281 28.275 20.475 28.275 15.2953C28.275 10.4813 24.375 6.52034 19.5 6.52034Z" fill="#255ECC"/>
+              <path d="M19.5 19.2563C17.3672 19.2563 15.6 17.4891 15.6 15.3563C15.6 13.2235 17.3672 11.4563 19.5 11.4563C21.6328 11.4563 23.4 13.2235 23.4 15.3563C23.4 17.4891 21.6328 19.2563 19.5 19.2563ZM19.5 12.9188C18.1594 12.9188 17.0625 14.0157 17.0625 15.3563C17.0625 16.6969 18.1594 17.7938 19.5 17.7938C20.8406 17.7938 21.9375 16.6969 21.9375 15.3563C21.9375 14.0157 20.8406 12.9188 19.5 12.9188Z" fill="#255ECC"/>
+            </svg>
+            <span>Бали</span>
+            <span>Дубай</span>
+            <span>Северный Кипр</span>
+            <span>Грузия</span>
+          </div>
         </div>
       </div>
+
+
+
     </div>
   </section>
-  <!--!blockInfo-->
 
-  <!--ForRealtors-->
-  <section id="ForRealtors"   >
-    <div class="title">
-      <div class="container">
-        <h2>{{ language.main[37] }}</h2>
-        <h3>{{ language.main[38] }}</h3>
-      </div>
-    </div>
+  <section class="rowInfo">
     <div class="container">
-
-
-      <div class="cont" @mousedown="handleMouseDown" @mouseleave="handleMouseLeave" @mouseup="handleMouseUp"
-        @mousemove="handleMouseMove" @touchstart="handleTouchStart" @touchend="handleTouchEnd"
-        @touchmove="handleTouchMove">
-        <div class="left">
-          <div class="slide" v-for="(slide, index) in slides"
-            :class="['slide', `slide${step}`, { active: step === (index + 1) }]" :key="index">
-            <div class="slide-text">
-              <h4>{{ slide.title }}</h4>
-              <span>{{ index + 1 }}</span>
-            </div>
-            <div class="slide-info"   ref="slideInfoRef" :class="{ purple: slide.color === 1 }">
-              <h5>{{ slide.infoTitle }}</h5>
-              <em>
-                <sub v-if="index < 1 || index > 4">{{ language.main[41] }}</sub>
-                <span v-if="index != 4">{{ slide.infoCount ?? slide.infoBtn }}</span>
-                <sub v-if="index === 4">{{ slide.infoBtn }}</sub>
-                <img v-if="index == 2" src="images/img/forRealtors/Mask.png" alt="" srcset="">
-                <img v-if="index == 4" src="images/img/forRealtors/cl.png" alt="" srcset="">
-              </em>
-              <img v-if="index == 1" src="images/img/forRealtors/planet.png" alt="" srcset="">
-              <img v-if="index == 3" src="images/img/forRealtors/vector.png" alt="" srcset="">
-
-            </div>
-          </div>
+      <div class="row-info">
+        <div class="block">
+          <h4>{{ count_house }} +</h4>
+          <p>{{ language.main[34] }}</p>
         </div>
-        <div class="right">
-          <img class="slide" v-for="(slide, index) in slides"
-            :class="['slide', `slide${index + 1}`, { active: step === (index + 1) }]"
-            :src="'images/img/forRealtors/s' + (index + 1) + '.png'" :alt="'Slide ' + (index + 1)" :key="index" />
-          <div class="tools">
-            <img class="tool" :class="{ anim: showToolAnimation }" src="images/img/forRealtors/tool.png" alt="" srcset="" />
-            <p v-html="language.main[42]"></p>
-          </div>
+        <div class="block">
+          <h4>{{ count_people }} + </h4>
+          <p>{{ language.main[35] }}</p>
+        </div>
+        <div class="block">
+          <h4>{{ count_flats }} +</h4>
+          <p>{{ language.main[36] }}</p>
         </div>
       </div>
-
-
-      <div class="row-houses">
-        <img src="images/img/forRealtors/h1.png" alt="" srcset="">
-        <img src="images/img/forRealtors/h2.png" alt="" srcset="">
-      </div>
-
-
+      <button>Зарегистрироваться бесплатно</button>
     </div>
-
   </section>
-  <!--!ForRealtors-->
 
-  <!--ForBuilders-->
-  <section id="ForBuilders">
+
+  <section class="grid-info">
+    <div class="container">
+      <h2>{{ language.main[37] }}</h2>
+      <h3>{{ language.main[38] }}</h3>
+      <h4>Онлайн сопровождение сделок "под ключ""</h4>
+      <div class="grid-setka">
+        <div class="slide" v-for="(slide, index) in slides"  :key="index">
+<!--          <div class="slide-text">-->
+<!--            <h5>{{ slide.title }}</h5>-->
+<!--          </div>-->
+          <div class="slide-info"   ref="slideInfoRef" :class="{ purple: slide.color === 1 }">
+            <img v-if="index===0" src="../../../public/images/img/forRealtors/1.png">
+            <img v-if="index===1" src="../../../public/images/img/forRealtors/2.png">
+            <img v-if="index===2" src="../../../public/images/img/forRealtors/3.png">
+            <img v-if="index===3" src="../../../public/images/img/forRealtors/4.png">
+            <img v-if="index===4" src="../../../public/images/img/forRealtors/5.png">
+            <img v-if="index===5" src="../../../public/images/img/forRealtors/6.png">
+            <h5>{{ slide.infoTitle }}</h5>
+          </div>
+        </div>
+      </div>
+      <button>Зарегистрироваться бесплатно</button>
+    </div>
+  </section>
+
+
+
+  <section class="grid-info">
     <div class="container">
       <h2>{{ language.main[52] }}</h2>
-      <div class="cont">
-        <div class="left">
-          <ul>
-            <li v-bind:class="{ active: forBuilders.activeIndex === 0 }" @click="activateItem(0)">
-              <span>{{ language.main[53] }}</span><em>1</em>
-            </li>
-            <li v-bind:class="{ active: forBuilders.activeIndex === 1 }" @click="activateItem(1)">
-              <span> {{ language.main[54] }}</span><em>2</em>
-            </li>
-            <li v-bind:class="{ active: forBuilders.activeIndex === 2 }" @click="activateItem(2)">
-              <span>{{ language.main[55] }}</span><em>3</em>
-            </li>
-          </ul>
-          <p v-html="language.main[56]">
-
-          </p>
-        </div>
-        <div class="right">
-          <img src="images/img/forBuilders/sl1.png" v-bind:class="{ active: forBuilders.activeIndex === 0 }" alt=""
-            srcset="">
-          <img src="images/img/forBuilders/sl2.png" v-bind:class="{ active: forBuilders.activeIndex === 1 }" alt=""
-            srcset="">
-          <img src="images/img/forBuilders/sl3.png" v-bind:class="{ active: forBuilders.activeIndex === 2 }" alt=""
-            srcset="">
-
-        </div>
-      </div>
-
-      <img class="bg" src="images/img/forBuilders/bg.png" alt="" srcset="">
-    </div>
-
-  </section>
-  <!--!ForBuilders-->
-
-  <!--help -->
-  <section id="help" v-if="openClient">
-    <div class="container">
-      <h2>{{ language.main[57] }}</h2>
-      <div class="help-cont">
-        <div class="left">
-          <p v-html="language.main[58]">
-          </p>
-
-          <div class="colums-info">
-            <div class="block">
-              <p>
-                {{ language.main[59] }}
-              </p>
-              <img src="images/img/help/gr.png" alt="" srcset="">
-            </div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block">
-              <p>
-                {{ language.main[60] }}
-              </p>
-              <img src="images/img/help/arrow.png" alt="" srcset="">
-            </div>
+      <div class="grid-info-row">
+        <div class="grid-setka two">
+          <div  class="slide"   >
+            <img   src="../../../public/images/img/forBuilders/1.png">
+            <h5>{{ language.main[53] }}</h5>
           </div>
-
-
-        </div>
-        <div class="right">
-          <div class="contant">
-            <div class="btn" v-for="n in 80" :key="n" @mouseenter="hideBtn" @mouseleave="showBtn">
-              <img src="images/img/welcom/plus.png" alt="" srcset="">
-            </div>
+          <div class="slide"   >
+            <img   src="../../../public/images/img/forBuilders/2.png">
+            <h5> {{ language.main[54] }}</h5>
+          </div>
+          <div class="slide"  >
+            <img   src="../../../public/images/img/forBuilders/3.png">
+            <h5>{{ language.main[55] }}</h5>
+          </div>
+          <div class="slide"  >
+            <img   src="../../../public/images/img/forBuilders/4.png">
+            <h5>Получайте теплые лиды</h5>
+            <button>Новинка</button>
           </div>
         </div>
+        <div class="rightImg"></div>
       </div>
 
+      <button>Добавить объект на платформу</button>
     </div>
   </section>
-  <!--!help-->
 
 
-  <!--lowSection-->
-  <section id="lowSection">
-
+  <section class="lowSection">
     <div class="container">
-      <div class="upp-row">
-        <div class="lines-animations">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+      <div class="rowLowSecion">
+        <div class="left">
+          <h2>Скачайте приложение  globoos</h2>
+          <div class="col-refs-prog">
+            <img class="shtrich" src="https://s3-alpha-sig.figma.com/img/d519/8dd8/f1b8958dc8868c4d7bf9f9fec68fff2f?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SjJqpzVDmVHNWJSqjbQhcYSo~1HGsI4Bi0OQyX0EdfSVM7fRNAIBUgfQ076vn9Mal2LcQ9HGcQkgaTSUDzBQRdoawcAuW55q~bF5IqNK0cEcDStcb-kTRTg~9UfRjkGWxPB2Q8Fy~rDwe3htMpvrg~zPwpBVnOGZ0quvCa16xjhEm3K2hzgh8c8hsTx1wx8UhlNE~SI6Ok63hnl7IbKYo1sxvnyMMW4BiohPhWUMCJK-1p12syhT1Rg6Rb0XA916vijDb0STIiqPCccVPSupGcTU51MVV5YR81nJuT3euTW7zHcHITilRckj9UjmIfDtnt9kygWNucMDFcDW9xYO5Q__">
+            <img class="platform" src="../../../public/images/img/lowSection/1.png"/>
+          </div>
         </div>
-        <div class="lines-animations">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div class="right">
+          <h2>Свяжитесь с нашим  менеджером</h2>
+          <div class="row-refs">
+            <p>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_0_127)">
+                  <path d="M11 0.558594C5.23359 0.558594 0.558594 5.23359 0.558594 11C0.558594 13.1098 1.18594 15.0777 2.26445 16.7191L0.919531 21.2738L5.65039 19.9633C7.21445 20.9 9.04492 21.4371 11 21.4371C16.7664 21.4371 21.4414 16.7621 21.4414 10.9957C21.4414 5.23359 16.7664 0.558594 11 0.558594Z" fill="#25D366"/>
+                  <path d="M16.7363 13.866C16.7234 13.7285 16.6418 13.6082 16.5172 13.5523C15.675 13.1656 14.8285 12.7789 13.9863 12.3922C13.8918 12.3492 13.7758 12.3707 13.707 12.4523L12.5641 13.7414C12.4738 13.8445 12.332 13.8789 12.2074 13.8273C11.6145 13.5824 10.8152 13.1699 10.0074 12.4738C9.04063 11.6445 8.47344 10.7551 8.15547 10.175C8.31445 10.0676 8.74844 9.74531 8.9418 9.14804C8.9418 9.14374 8.94609 9.13945 8.94609 9.13945C9.06641 8.76992 9.04063 8.37031 8.90742 8.00507C8.67969 7.39921 8.22422 6.22617 8.04805 6.0457C8.01797 6.01562 7.98359 5.98554 7.98359 5.98554C7.85469 5.86953 7.68711 5.80507 7.51094 5.79648C7.45078 5.79218 7.38633 5.79218 7.31758 5.79218C7.11992 5.78789 6.94375 5.78789 6.81484 5.80507C6.44961 5.85664 6.1832 6.10156 6.01563 6.30781C5.81367 6.55273 5.57305 6.91796 5.41406 7.39921C5.40117 7.44218 5.38828 7.48085 5.37539 7.52382C5.19922 8.13398 5.23359 8.7871 5.44414 9.38867C5.6418 9.95156 5.92969 10.6219 6.36367 11.3309C7.09844 12.5383 7.89766 13.2859 8.43906 13.7801C9.04922 14.343 9.80547 15.0348 11.0043 15.6105C12.1129 16.1434 13.1184 16.341 13.793 16.4227C14.068 16.4484 14.575 16.4527 15.1551 16.2336C15.4215 16.1305 15.6449 16.0059 15.8254 15.8727C16.3023 15.5332 16.6375 15.0219 16.7234 14.4461C16.7234 14.4418 16.7234 14.4375 16.7234 14.4332C16.7535 14.2141 16.7492 14.025 16.7363 13.866Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_127">
+                    <rect width="22" height="22" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Написать Whatsapp</span>
+            </p>
+            <p>globoos.com@gmail.ru.ru</p>
+          </div>
+          <a href="#"><img class="logo" src="../../../public/images/img/header/Globoos.png"></a>
         </div>
       </div>
-
-      <h2 v-html="language.main[67]"></h2>
-      <button class="reg-btn" v-on:click="openRegister = !openRegister">{{ language.main[29] }}</button>
-      <!--  <button v-on:click="openLoginDeveloper = !openLoginDeveloper"><span>{{ language.main[61] }}</span> <img
-          src="images/img/lowSection/arrow.png" alt="" srcset=""></button> -->
-      <h3>{{ language.main[62] }}</h3>
-
-      <div class="row-soc">
-
-        <a href="https://apps.apple.com/ru/app/evon/id6450259354" target="_blank"
-                class="flex gap-[1vw]">
-                <img src="images/img/welcom/apl.png" alt="" srcset="">
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=ru.alfa.evonnew" target="_blank"
-                class="flex gap-[1vw]">
-                <img src="images/img/welcom/andr.png" alt="" srcset="">
-              </a>
-      </div>
-
-
     </div>
-    <div class="foot">
-      <div class="container">
-        <img src="images/img/lowSection/logo.png" alt="" srcset="">
-        <p>
-          {{ language.main[63] }}
-        </p>
-      </div>
-    </div>
-
-    <div class="bg-houses">
-      <img src="images/img/lowSection/h2.png" alt="" srcset="">
-      <img src="images/img/lowSection/h1.png" alt="" srcset="">
-    </div>
-
   </section>
-  <!--!lowSection-->
+
 
   <new-footer :language="language"></new-footer>
 </template>

@@ -6,8 +6,10 @@ header ul {
 }
 
 header ul li {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  height: 44px;
+  align-items: center;
 }
 
 header ul li a {
@@ -15,8 +17,7 @@ header ul li a {
 }
 
 header img.logo {
-    width: 7.528vw;
-    height: 1.516vw;
+    width: 16vw;
 }
 
 header .ref-soc img {
@@ -53,41 +54,25 @@ header .container {
     overflow: visible;
 }
 header button.login {
-    padding: 0.9375vw 2.6041666666666665vw;
-    width: auto;
-    height: 2.7083333333333335vw;
-    border: 0.052083333333333336vw solid #9657EC;
-    border-radius: 0.10416666666666667vw;
-    background-color: transparent;
-    font-family: 'Nekst';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1458333333333333vw;
-    line-height: 0.78125vw;
-    margin-left: 2.6041666666666665vw;
-    position: relative;
-    z-index: 22;
-    margin-right: 2.0833333333333335vw;
-    color: #9657EC;
-    transition: 0.5s;
+    padding-right: 30px;
+    border-right: 1px solid black;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
-header button.login:hover {
-    background-color: #9657EC;
-    color: white;
-}
 
 header button.registr {
-    font-family: 'Nekst';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1458333333333333vw;
-    line-height: 1.3541666666666667vw;
-    display: flex;
-    align-items: center;
-    border: 0;
-    background-color: transparent;
-    color: #000000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 30px;
 }
 
 header .lines-animations {
@@ -208,6 +193,10 @@ header .lines-animations {
     display: flex;
     gap: 5vw;
     flex-direction: column;
+
+}
+header button{
+  height: 100%;
 }
 .modal.choise .btns button:last-child{
     margin-bottom: 0;
@@ -215,6 +204,7 @@ header .lines-animations {
 header .logIn {
     position: relative;
     z-index: 41;
+    height: 100%;
 }
 
 header span.select-lang {
@@ -237,15 +227,12 @@ header .logIn.active .select-login {
 
 header .logIn .select-login {
     position: absolute;
-    width: 100%;
-    left: calc(50% - 5.3125vw);
-    top: -0.78125vw;
-    max-width: 10.989583333333334vw;
-    height: 11.927083333333334vw;
-    border: 0.052083333333333336vw solid #9657EC;
-    border-radius: 0.10416666666666667vw;
-    z-index: 20;
-    background: white;
+    width: 148px;
+    left: -46px;
+    top: -15px;
+    height: auto;
+    border-radius:8px;
+    z-index: 17;
 }
 
 header .logIn button:not(.login):nth-child(1) {
@@ -302,210 +289,76 @@ header {
 }
 
 /*welcom*/
-#welcom {
-    padding-bottom: 2.6041666666666665vw;
-    position: relative;
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-content: stretch;
-    align-items: center;
+
+.welcom{
+  height: 425px;
+  background-image: url("../images/img/welcom/BGWelcom.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.welcom h1{
+  margin-top: 70px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 780px;
 }
 
-#welcom .welcom-cont {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    grid-gap: 5.208vw;
+.welcom .row-info{
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  margin-top: 60px;
+  align-items: end;
+}
+.welcom .row-info .top{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.welcom .row-info h3{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.welcom .row-info .line{
+  display: flex;
+  gap: 40px;
+  margin-top: 18px;
+  padding-left: 60px;
+  align-items: center;
+}
+.welcom .row-info .line span{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #C0D5FF;
 }
 
-#welcom .welcom-cont .left {
-    background-image: url(../images/img/welcom/Rectangle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.welcom .row-info .right .line{
+  align-items: end;
+  padding-left: 0;
+  margin-left: -50px;
+  gap: 0;
+  margin-top: 12px;
 }
-
-#welcom h1 {
-    font-family: 'ALS Gorizont';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.8125vw;
-    line-height: 4.010416666666667vw;
-    height: 14.583333333333334vw;
-    display: flex;
-    color: #000000;
+.welcom .row-info .right .line span{
+  display: block;
+  margin-right: 22px;
 }
-
-#welcom h4 {
-    margin-top: 3.125vw;
-    margin-bottom: 1.0416666666666667vw;
-}
-
-#welcom h4.title {
-    display: flex;
-}
-
-#welcom h4.title img {
-    top: 0;
-    margin-right: 0.78125vw;
-}
-
-#welcom h4 img {
-    width: 1.9791666666666667vw;
-    height: 1.9791666666666667vw;
-    position: relative;
-    top: 0.5729166666666666vw;
-}
-
-#welcom h4 span {
-    font-family: 'ALS Gorizont';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 1.6302083333333333vw;
-    color: #000000;
-}
-
-#welcom p {
-    font-family: 'Nekst';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1458333333333333vw;
-    line-height: 1.8229166666666667vw;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    opacity: 0.7;
-    max-width: 39.791666666666664vw;
-}
-
-#welcom button {
-    margin: 1.5625vw 0px;
-    border: 0.052083333333333336vw solid #9657EC;
-    border-radius: 0.10416666666666667vw;
-    font-family: 'Nekst';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1458333333333333vw;
-    padding: 1.8229166666666667vw 4.427083333333333vw;
-    line-height: 0.8333333333333334vw;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    color: #9657EC;
-    cursor: pointer;
-}
-
-#welcom button:hover {
-    background-color: #9657EC;
-    color: white;
-}
-
-#welcom .save-prog p {
-    display: flex;
-    gap: 0.78125vw;
-    width: fit-content;
-}
-
-#welcom .save-prog span {
-    font-family: 'Nekst';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1458333333333333vw;
-    line-height: 1.3541666666666667vw;
-    display: flex;
-    align-items: center;
-    color: #3B3A45;
-    opacity: 0.4;
-}
-
-#welcom .scroll {
-    margin-top: 3.125vw;
-    width: fit-content;
-}
-
-#welcom .scroll img {
-    animation: jump 0.6s infinite;
-}
-@keyframes jump {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-#welcom .scroll span {
-    font-family: 'ALS Gorizont';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 1.5625vw;
-    display: flex;
-    color: #9657EC;
-    align-items: center;
-    margin-bottom: 0.5208333333333334vw;
-}
-
-#welcom .scroll img {
-    height: 0.625vw;
-    margin: 0 auto;
-    width: 2.1875vw;
-    display: block;
-}
-
-#welcom .ref-soc {
-    display: none;
-    justify-content: space-between;
-}
-
-#welcom .lines-animations {
-    position: absolute;
-    left: calc(50vw - 0px);
-    bottom: 0;
-    transform: rotate(-180deg);
-}
-
-#welcom .welcom-cont .right .contant {
-    width: 100%;
-    height: 100%;
-    max-height: 70vw;
-    max-width: 56vw;
-    background-image: url(../images/img/welcom/bgImg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-#welcom .welcom-cont .right .contant .btn {
-    background-color: white;
-    width: -moz-fit-content;
-    width: 100%;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#welcom .welcom-cont .right .contant .btn img{
-    display: block;
-    margin: 0 auto;
-    width: 1.666vw;
-}
-#welcom .welcom-cont .right .contant .btn.hide {
-    opacity: 0;
+.welcom .row-info .right .line span:first-of-type{
+  margin-left: 12px;
 }
 .modal.reg  .transition-all{
     filter: brightness(0) invert(1);
@@ -519,254 +372,198 @@ header {
     line-height: 0.833vw;
 }
 
-
-#welcom h3{
-  font-family: 'ALS Gorizont';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8125vw;
-  line-height: 2.5vw;
-  height: 4vw;
-  display: block;
-  color: #000000;
-  margin-bottom: 2vw;
+/**rowInfo*/
+.rowInfo{
+  background: #F5F5F5;
+  padding: 25px 0px;
+}
+.rowInfo .row-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rowInfo .row-info .block{
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  text-align: center;
+}
+.rowInfo .row-info .block h4{
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  color: #255ECC;
+  text-align: center;
+}
+.rowInfo .row-info .block p{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #262626;
   text-align: center;
 }
 
 
-@media only screen and (max-width: 1000px) {
-    .lines-animations {
-        display: none;
-    }
+/**grid-info**/
+.grid-info{
 
-    .container {
-        padding: 0 4.6875vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom .welcom-cont {
-        display: block;
-    }
-
-    #welcom {
-        align-items: start;
-        min-height: auto;
-    }
-
-    #welcom .welcom-cont .right .contant {
-      margin: 0 auto;
-      height: 158.9375vw;
-      max-height: 112vw;
-      width: 100%;
-      max-width: 90vw;
-    }
-
-  #welcom h3{
-    font-size: 3.5vw;
-    line-height: 4vw;
-    height: 12vw;
-  }
-    #welcom .welcom-cont .right .contant .btn {
-        display: none;
-    }
-
-    #welcom .ref-soc {
-        display: flex;
-        margin: 0 auto;
-        margin: 21.875vw auto 11.5625vw auto; /* (значение px / 320) * 100 */
-        max-width: 51.25vw; /* (значение px / 320) * 100 */
-      justify-content: center;
-      gap: 8vw;
-    }
-
-    #welcom .ref-soc img {
-        height: 5.9375vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom h1 {
-        font-size: 6.25vw; /* (значение px / 320) * 100 */
-        line-height: 7.5vw; /* (значение px / 320) * 100 */
-        height: 34.375vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom h4 img {
-        width: 6.875vw; /* (значение px / 320) * 100 */
-        height: 6.875vw; /* (значение px / 320) * 100 */
-        top: 1.875vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom h4 span {
-        font-size: 4.375vw; /* (значение px / 320) * 100 */
-        line-height: 4.375vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom button {
-        font-size: 4.375vw;
-        line-height: 5vw;
-        padding: 3.125vw 7.1875vw;
-        margin-bottom: 5.31vw;
-    }
-
-    #welcom .save-prog span {
-        font-size: 4.375vw; /* (значение px / 320) * 100 */
-        line-height: 5.3125vw; /* (значение px / 320) * 100 */
-    }
-
-    #welcom .save-prog img {
-        width: 5.625vw;
-        margin-left: 4.68vw;
-    }
-
-    #welcom p {
-        font-size: 4.0625vw;
-        line-height: 160.5%;
-        max-width: none;
-        margin-bottom: 5.3125vw;
-    }
-    header img.logo {
-        width: 30.8vw;
-        height: auto;
-    }
-    #welcom h4 {
-        margin-top: 18.75vw;
-        margin-bottom: 4.0416666666666667vw;
-    }
-    header ul li.user img{
-        width: 100%;
-    }
-    #welcom .scroll {
-        display: none;
-    }
-
-    header ul li.btns {
-        display: none;
-    }
-
-    header ul li.ref-soc {
-        display: none;
-    }
-
-    header .lang span {
-        font-size: 4.375vw; /* (значение px / 320) * 100 */
-        line-height: 5vw; /* (значение px / 320) * 100 */
-    }
-
-    header .lang {
-        margin-right: 8.75vw; /* (значение px / 320) * 100 */
-        margin-left: auto;
-        padding-top: 3vw;
-    }
-
-    header ul li.user {
-        display: block;
-        width: 6.875vw; /* (значение px / 320) * 100 */
-        height: 6.875vw; /* (значение px / 320) * 100 */
-    }
-
-    .modal {
-        padding: 7.1875vw;
-        width: calc(100% - 25vw);
-        max-width: none;
-    }
-
-    .modal.lodinn-btns .modal-contant {
-        background: white;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        gap: 4.6875vw; /* (значение px / 320) * 100 */
-    }
-
-    .modal button {
-        font-size: 3.75vw;
-        padding: 4.0625vw;
-        line-height: 5vw;
-    }
-
-    .modal h2 {
-        text-align: center;
-        font-size: 6.25vw;
-        line-height: 8.125vw;
-        margin-bottom: 10vw;
-    }
-
-    .modal input {
-        height: 11.875vw;
-        margin: 0;
-        font-size: 3.75vw;
-        line-height: 4.375vw;
-        margin-bottom: -4.6875vw;
-    }
-
-    .modal form div{
-        height: 11.875vw;
-        padding: 0;
-    }
-    .modal div.flex{
-        height: 11.875vw;
-        padding: 0;
-    }
-    .modal a {
-        font-weight: 400;
-        font-size: 5vw; /* (значение px / 320) * 100 */
-        line-height: 5vw; /* (значение px / 320) * 100 */
-    }
-
-    .modala {
-        display: block;
-        text-align: center;
-        margin-top: 15.625vw; /* (значение px / 320) * 100 */
-    }
-
-    .modal button:not(.login-ref) {
-        background: #9657EC;
-        width: 100%;
-        border: 0;
-        font-family: 'Nekst';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 4.375vw; /* (значение px / 320) * 100 */
-        line-height: 8.125vw; /* (значение px / 320) * 100 */
-        color: #FFFFFF;
-        display: block;
-        padding: 1.875vw; /* (значение px / 320) * 100 */
-        text-align: center;
-        border-radius: 1.5625vw; /* (значение px / 320) * 100 */
-        opacity: 1;
-        margin-top: 0;
-    }
-
-    header .lang .select {
-        width: 13.75vw; /* (значение px / 320) * 100 */
-        left: calc(50% - 4.6875vw);
-        text-align: center;
-        padding-top: 13.4375vw; /* (значение px / 320) * 100 */
-        top: 0;
-    }
-
-    header ul {
-        grid-template-columns: 32.8125vw 1fr auto; /* (значение px / 320) * 100 */
-    }
-
-    header .lang {
-        margin-left: auto;
-    }
-    .modal.reg {
-        padding: 8.75vw;
-    }
-    .modal.reg input {
-        height: 9.87vw;
-    }
-    .modal.reg .select {
-        height: auto;
-    }
-    .modal.reg .select-title{
-        padding: 3.75vw;
-    }
-    .modal.reg .select-title span  {
-        font-size: 3vw;
-        line-height: 3vw;
-    }
+}
+.grid-info h2{
+  padding-top: 40px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:  #255ECC;
+}
+.grid-info h3{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #262626;
+  margin-top: 15px;
+}
+.grid-info h4{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #262626;
+  margin-top: 15px;
+}
+.grid-info  button{
+  background: #255ECC;
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 17px 45px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+}
+.grid-info .grid-setka{
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+.grid-info .grid-setka .slide{
+  padding: 30px;
+  background: #F5F5F5;
+  border-radius: 8px;
+}
+.grid-info .grid-setka .slide h5{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #262626;
+  margin-top: 18px;
+}
+.grid-info-row{
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 20px;
+}
+.grid-info-row .rightImg{
+  background-image: url("../../public/images/img/forBuilders/5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.grid-info .grid-setka.two{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.grid-info .grid-setka .slide button{
+  padding: 4px 7px;
+  margin-left: 0;
+  margin-top: 5px;
 }
 
 
-/*!welcom*/
+/*lowSection*/
+.lowSection .rowLowSecion{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.lowSection .rowLowSecion h2{
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #255ECC;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+.lowSection .rowLowSecion a{
+  width: fit-content;
+  display: block;
+}
+.lowSection .rowLowSecion .logo{
+  width: 253px;
+}
+.lowSection .rowLowSecion .row-refs p{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.lowSection .rowLowSecion .row-refs p:first-child{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.lowSection .rowLowSecion .row-refs{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.lowSection .rowLowSecion .col-refs-prog{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.lowSection .rowLowSecion .col-refs-prog .shtrich{
+  width: 128px;
+  height: 124px ;
+}
+@media  (min-width: 1000px) and (max-width: 1400px) {
+  .container{
+    margin: 0px 100px;
+    width: 100%;
+  }
+}

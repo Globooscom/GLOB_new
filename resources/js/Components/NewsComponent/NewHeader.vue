@@ -8,23 +8,18 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
   <header>
     <div v-if="openLogIn" @click="openLogIn = false" class="absolute h-[100vh] w-full z-40"></div>
     <div class="container">
-      <div class="lines-animations">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
       <nav>
         <ul>
           <li>
-            <a href="#"><img class="logo" src="images/img/header/logo.png" alt="" srcset=""></a>
+            <a href="#"><img class="logo" src="../../../../public/images/img/header/Globoos.png" alt="" srcset=""></a>
           </li>
           <li class="ref-soc">
-            <a href="wa.me/+905442258559" target="_blank"><img src="images/img/header/s1.png" alt="" srcset=""></a>
-<!--            <a href="https://m.facebook.com/people/EVON/100092335686616/" target="_blank"><img src="images/img/header/s2.png" alt=""-->
-<!--                srcset=""></a>-->
-            <a href="https://t.me/evon_turkey" target="_blank"><img src="images/img/header/s3.png" alt="" srcset=""></a>
-            <a href="https://instagram.com/evon_platform_tr?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="images/img/header/s4.png"
-                alt="" srcset=""></a>
+<!--            <a href="wa.me/+905442258559" target="_blank"><img src="images/img/header/s1.png" alt="" srcset=""></a>-->
+<!--&lt;!&ndash;            <a href="https://m.facebook.com/people/EVON/100092335686616/" target="_blank"><img src="images/img/header/s2.png" alt=""&ndash;&gt;-->
+<!--&lt;!&ndash;                srcset=""></a>&ndash;&gt;-->
+<!--            <a href="https://t.me/evon_turkey" target="_blank"><img src="images/img/header/s3.png" alt="" srcset=""></a>-->
+<!--            <a href="https://instagram.com/evon_platform_tr?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="images/img/header/s4.png"-->
+<!--                alt="" srcset=""></a>-->
           </li>
           <li class="lang">
             <change-language @selectLanguage="selectLanguage" :selectLang="selectLang" :user_info="user_info"/>
