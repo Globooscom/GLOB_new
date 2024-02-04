@@ -155,7 +155,7 @@
       </div>
     </div>
   </main>
-  <app-footer :language="language" />
+  <new-footer :language="language"></new-footer>
 </template>
 
 <script>

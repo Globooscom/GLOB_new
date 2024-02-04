@@ -1,3 +1,4 @@
+@import "../../public/styles/fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,6 +23,7 @@
   border: 0;
   outline: none;
   box-sizing: border-box;
+  font-family: "Montserrat"  !important;
 }
 
 html,
@@ -202,22 +204,22 @@ input::placeholder {
 /*********************HOVERS***************************/
 
 .login__btn--bg {
-  background: #E84680;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
 .login__btn--bg:hover {
-  background: #EC1B65;
+  background: #0e51d8;
   transition: all 0.2s;
 }
 
 .login__btn--bg:active {
-  background: #D3004C;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
 .login__btn--bg:disabled {
-  background: rgb(232, 70, 128);
+  background: #255ECC;
   opacity: 0.5;
   transition: all 0.2s;
 }
@@ -314,14 +316,18 @@ input::placeholder {
   color: #6435A5;
   transition: all 0.2s;
 }
-
+.more__button:hover{
+  background: #0e51d8;
+}
 .hover__search:hover input {
   background: rgba(255, 255, 255, 0.2);
 }
-
+.hover__button--purple{
+   background: #255ECC;
+   transition: all 0.2s;
+}
 .hover__button--purple:hover {
-  background: #492679;
-  transition: all 0.2s;
+  background: #0e51d8;
 }
 
 .hover__close:hover span,
@@ -1489,7 +1495,8 @@ input::placeholder {
 }
 
 .bg-litepink {
-  background: rgba(232, 70, 128, 0.15);
+  background: rgba(37, 94, 204, 0.15);
+  color: white;
 }
 
 .favorites__banner {
