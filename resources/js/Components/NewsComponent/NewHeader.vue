@@ -35,7 +35,9 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
             <button class="registr" @click="$emit('open-register')">{{ language.main[22] }}</button>
           </li>
           <li class="user"  @click="$emit('open-modal-choise')">
-            <img src="images/img/header/User.png" alt="" srcset="">
+            <span></span>
+            <span></span>
+            <span></span>
           </li>
 
         </ul>

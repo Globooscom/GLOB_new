@@ -132,7 +132,7 @@ import '../../../public/styles/ForRealtors.css'
           </div>
         </div>
       </div>
-      <button>Зарегистрироваться бесплатно</button>
+      <button @click="openRegister = !openRegister">Зарегистрироваться бесплатно</button>
     </div>
   </section>
 
@@ -157,14 +157,16 @@ import '../../../public/styles/ForRealtors.css'
           </div>
           <div class="slide"  >
             <img   src="../../../public/images/img/forBuilders/4.png">
-            <h5>Получайте теплые лиды</h5>
-            <button>Новинка</button>
+            <div>
+              <h5>Получайте теплые лиды</h5>
+              <button>Новинка</button>
+            </div>
           </div>
         </div>
         <div class="rightImg"></div>
       </div>
 
-      <button>Добавить объект на платформу</button>
+      <button @click="openLoginRealtor = !openLoginRealtor">Добавить объект на платформу</button>
     </div>
   </section>
 
