@@ -10,7 +10,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
     <div class="_container h-[60px] xxl:h-12 xl:h-10 sm:px-1">
       <div class="flex items-center justify-between h-full ">
         <Link href="/" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
-        <img src="../../assets/svg/header_logo_icon.svg" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
+        <img src="../../../public/images/img/header/GloboosWh.png" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
         </Link>
         <div class="flex items-center gap-7 xxl:gap-5 lg:gap-2 text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[14px]">
           <change-language @selectLanguage="selectLanguage" :selectLang="selectLang" />
@@ -54,7 +54,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
           </div>
           <Link href="/houses" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
-          <img src="../../assets/svg/header_logo_icon.svg" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
+            <img src="../../../public/images/img/header/GloboosWh.png" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
           </Link>
           <div
             class="lg:hidden text-white text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[15px] flex gap-20 xxl:gap-16 xl:gap-12 x:gap-10">
@@ -153,7 +153,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
           </div>
           <Link href="/profile/houses" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
-          <img src="../../assets/svg/header_logo_icon.svg" class="h-6 xxl:h-5 xl:h-4 sm:h-4" alt="Логотип">
+            <img src="../../../public/images/img/header/GloboosWh.png" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
           </Link>
           <div
             class="lg:hidden text-white text-[16px] xxl:text-[13px] xl:text-[11px] flex gap-20 xxl:gap-16 xl:gap-12 x:gap-10">
@@ -220,7 +220,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
           </div>
           <Link href="/houses" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
-            <img src="../../assets/svg/header_logo_icon.svg" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
+            <img src="../../../public/images/img/header/GloboosWh.png" class="h-6 xxl:h-5 xl:h-4 lg:h-5 sm:h-4" alt="Логотип">
           </Link>
           <div
             class="lg:hidden text-white text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[15px] flex gap-20 xxl:gap-16 xl:gap-12 x:gap-10">
