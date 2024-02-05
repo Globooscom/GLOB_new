@@ -98,10 +98,10 @@ import '../../../public/styles/ForRealtors.css'
           <h4>{{ count_house }} +</h4>
           <p>{{ language.main[34] }}</p>
         </div>
-        <div class="block">
-          <h4>{{ count_people }} + </h4>
-          <p>{{ language.main[35] }}</p>
-        </div>
+<!--        <div class="block">-->
+<!--          <h4>{{ count_people }} + </h4>-->
+<!--          <p>{{ language.main[35] }}</p>-->
+<!--        </div>-->
         <div class="block">
           <h4>{{ count_flats }} +</h4>
           <p>{{ language.main[36] }}</p>
@@ -198,7 +198,7 @@ import '../../../public/styles/ForRealtors.css'
               </svg>
               <span>Написать Whatsapp</span>
             </p>
-            <p>globoos.com@gmail.ru.ru</p>
+            <p>info@globoos.com</p>
           </div>
           <a href="#"><img class="logo" src="../../../public/images/img/header/Globoos.png"></a>
         </div>
