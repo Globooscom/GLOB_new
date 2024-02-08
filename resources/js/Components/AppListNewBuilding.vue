@@ -12,7 +12,7 @@
 
   <div class="grid__list-new-build">
     <div
-      class="sticky top-[2vw] filter__left lg:absolute lg:z-40 lg:top-0 transition-all duration-500 w-full bg-[#F6F3FA] rounded-[6px] h-fit"
+      class="sticky top-[2vw] filter__left lg:absolute lg:z-40 lg:top-0 transition-all duration-500 w-full bg-[ #F5F5F5] rounded-[6px] h-fit"
       :class="{'animation__filter': openFilter}"
     >
       <div class="flex justify-between items-center p-7 xxl:p-5 xl:p-4">
@@ -71,7 +71,7 @@
                      :class="{ 'rotate-180': openSelectPlan }" alt="">
               </div>
               <div v-if="openSelectPlan"
-                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div class="flex items-center text-[#1E1D2D] ml-5 mt-2" v-for="(item, index) in selectPlan"
                      :key="idx">
                   <input class="custom__checkbox" name="infrastructure" type="checkbox"
@@ -96,7 +96,7 @@
                      :class="{ 'rotate-180': openSelectCity }" alt="">
               </div>
               <div v-if="openSelectCity"
-                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div class="relative w-full p-5 xxl:p-4 xl:p-3">
                   <input @click.stop="noDelete" v-model="searchValue"
                          class="py-3 xxl:py-2.5 xl:py-2 pl-10 xxl:pl-8 xl:pl-6 focus:ring-[#6435A5] focus:border-[#6435A5] w-full text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] rounded-[6px] leading-none border border-solid border-[#E5DFEE]"
@@ -130,7 +130,7 @@
                      :class="{ 'rotate-180': openSelectRegion }" alt="">
               </div>
               <div v-if="openSelectRegion"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div v-if="filters.areas.length > 0">
                   <p>
                     {{ language.ob[17] }}
@@ -172,14 +172,14 @@
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_from">{{
                   language.rielt_1[19] }}</label>
                 <input @click="changeBorder(1)" v-model="filters.price.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F6F3FA] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_before">{{
                   language.rielt_1[20] }}</label>
                 <input @click="changeBorder(1)" v-model="filters.price.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F6F3FA] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_before">
               </div>
             </div>
@@ -197,7 +197,7 @@
                      :class="{ 'rotate-180': openSelectDeadline }" alt="">
               </div>
               <div v-if="openSelectDeadline"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <!--                <span-->
                 <!--                  v-for="(deadline, idx) in deadlines" :key="idx"-->
                 <!--                  @click="changeSelectDeadline(deadline)"-->
@@ -225,14 +225,14 @@
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="from">{{
                   language.rielt_1[19] }}</label>
                 <input @click="changeBorder(2)" v-model="filters.square.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F6F3FA] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="before">{{
                   language.rielt_1[20] }}</label>
                 <input @click="changeBorder(2)" v-model="filters.square.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F6F3FA] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="before">
               </div>
             </div>
@@ -253,7 +253,7 @@
               </div>
               <div
                    v-if="openSelectDev"
-                   class="max-h-[300px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[300px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <span
                   v-for="(item, idx) in sortBilders()" :key="idx"
                   @click="changeSelectDev(item)"
@@ -278,7 +278,7 @@
                   language.rielt_1[26] }}
                   (м)</label>
                 <input @click="changeBorder(3)" v-model="filters.location.toSea"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_sea">
               </div>
               <div :class="{'border__purple': isBorder === 4 }"
@@ -286,7 +286,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_school">{{
                   language.rielt_1[30] }} (м)</label>
                 <input @click="changeBorder(4)" v-model="filters.location.toSchool"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_school">
               </div>
               <div :class="{'border__purple': isBorder === 5 }"
@@ -294,7 +294,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_shoping">{{
                   language.rielt_1[28] }} (м)</label>
                 <input @click="changeBorder(5)" v-model="filters.location.toShop"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_shoping">
               </div>
               <div :class="{'border__purple': isBorder === 6 }"
@@ -303,7 +303,7 @@
                   language.rielt_1[33] }}
                   (м)</label>
                 <input @click="changeBorder(6)" v-model="filters.location.toPark"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_park">
               </div>
               <div :class="{'border__purple': isBorder === 7 }"
@@ -311,7 +311,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_child">{{
                   language.rielt_1[29] }} (м)</label>
                 <input @click="changeBorder(7)" v-model="filters.location.toChildrenSchool"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_child">
               </div>
               <div :class="{'border__purple': isBorder === 8 }"
@@ -319,7 +319,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_stop">{{
                   language.rielt_1[34] }} (м)</label>
                 <input @click="changeBorder(8)" v-model="filters.location.toBus"
-                       class="bg-[#F6F3FA] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_stop">
               </div>
             </div>
@@ -363,7 +363,7 @@
     </div>
     <div class="w-full px-7 xxl:px-5 xl:px-4 lg:px-0">
       <div class="relative z-20">
-        <div class="hidden lg:flex bg-[#F6F3FA] rounded-[10px] justify-between items-center p-5 xxl:p-4 xl:p-3 mb-2">
+        <div class="hidden lg:flex bg-[ #F5F5F5] rounded-[10px] justify-between items-center p-5 xxl:p-4 xl:p-3 mb-2">
           <div
             class="flex items-center gap-5 xxl:gap-4 xl:gap-3 rounded-[5px] text-[#1E1D2D] text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[16px] leading-none font-semibold">
             <div @click="openFilter = true"

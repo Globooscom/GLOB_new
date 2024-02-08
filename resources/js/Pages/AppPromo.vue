@@ -51,8 +51,7 @@ import '../../../public/styles/ForRealtors.css'
   <section class="welcom">
 
     <div class="container">
-      <h1>Сервис №1 для профессионалов рынка
-        зарубежной недвижимости</h1>
+      <h1>{{ language.main[70] }}</h1>
       <div class="row-info">
         <div class="left">
           <div class="top">
@@ -60,13 +59,13 @@ import '../../../public/styles/ForRealtors.css'
               <path d="M25.5 44.3859L24.7828 43.5093C24.3047 42.8718 12.1125 28.6078 12.1125 20.0812C12.1125 12.6703 18.1687 6.69373 25.5 6.69373C32.8312 6.69373 38.8875 12.75 38.8875 20.0812C38.8875 28.6078 26.6953 42.9515 26.2172 43.5093L25.5 44.3859ZM25.5 8.52654C19.125 8.52654 14.025 13.7062 14.025 20.0015C14.025 26.6953 22.8703 38.0906 25.5 41.3578C28.1297 38.0906 36.975 26.775 36.975 20.0015C36.975 13.7062 31.875 8.52654 25.5 8.52654Z" fill="#255ECC"/>
               <path d="M25.5 25.1812C22.7109 25.1812 20.4 22.8703 20.4 20.0812C20.4 17.2921 22.7109 14.9812 25.5 14.9812C28.289 14.9812 30.6 17.2921 30.6 20.0812C30.6 22.8703 28.289 25.1812 25.5 25.1812ZM25.5 16.8937C23.7468 16.8937 22.3125 18.3281 22.3125 20.0812C22.3125 21.8343 23.7468 23.2687 25.5 23.2687C27.2531 23.2687 28.6875 21.8343 28.6875 20.0812C28.6875 18.3281 27.2531 16.8937 25.5 16.8937Z" fill="#255ECC"/>
             </svg>
-            <h3>Турция</h3>
+            <h3>{{ language.main[71] }}</h3>
           </div>
           <div class="line">
-            <span>Стамбул</span>
-            <span>Аланья</span>
-            <span>Анталья</span>
-            <span>Мерсин</span>
+            <span>{{ language.main[72] }}</span>
+            <span>{{ language.main[73] }}</span>
+            <span>{{ language.main[74] }}</span>
+            <span>{{ language.main[75] }}</span>
           </div>
         </div>
         <div class="right">
@@ -78,10 +77,10 @@ import '../../../public/styles/ForRealtors.css'
               <path d="M19.5 33.9422L18.9516 33.2719C18.5859 32.7844 9.2625 21.8766 9.2625 15.3563C9.2625 9.68909 13.8937 5.11877 19.5 5.11877C25.1062 5.11877 29.7375 9.75003 29.7375 15.3563C29.7375 21.8766 20.4141 32.8453 20.0484 33.2719L19.5 33.9422ZM19.5 6.52034C14.625 6.52034 10.725 10.4813 10.725 15.2953C10.725 20.4141 17.4891 29.1281 19.5 31.6266C21.5109 29.1281 28.275 20.475 28.275 15.2953C28.275 10.4813 24.375 6.52034 19.5 6.52034Z" fill="#255ECC"/>
               <path d="M19.5 19.2563C17.3672 19.2563 15.6 17.4891 15.6 15.3563C15.6 13.2235 17.3672 11.4563 19.5 11.4563C21.6328 11.4563 23.4 13.2235 23.4 15.3563C23.4 17.4891 21.6328 19.2563 19.5 19.2563ZM19.5 12.9188C18.1594 12.9188 17.0625 14.0157 17.0625 15.3563C17.0625 16.6969 18.1594 17.7938 19.5 17.7938C20.8406 17.7938 21.9375 16.6969 21.9375 15.3563C21.9375 14.0157 20.8406 12.9188 19.5 12.9188Z" fill="#255ECC"/>
             </svg>
-            <span>Бали</span>
-            <span>Дубай</span>
-            <span>Северный Кипр</span>
-            <span>Грузия</span>
+            <span>{{ language.main[76] }}</span>
+            <span>{{ language.main[77] }}</span>
+            <span>{{ language.main[78] }}</span>
+            <span>{{ language.main[79] }}</span>
           </div>
         </div>
       </div>
@@ -115,7 +114,7 @@ import '../../../public/styles/ForRealtors.css'
     <div class="container">
       <h2>{{ language.main[37] }}</h2>
       <h3>{{ language.main[38] }}</h3>
-      <h4>Онлайн сопровождение сделок "под ключ""</h4>
+      <h4>{{ language.main[80] }}</h4>
       <div class="grid-setka">
         <div class="slide" v-for="(slide, index) in slides"  :key="index">
 <!--          <div class="slide-text">-->
@@ -132,7 +131,7 @@ import '../../../public/styles/ForRealtors.css'
           </div>
         </div>
       </div>
-      <button @click="openRegister = !openRegister">Зарегистрироваться бесплатно</button>
+      <button @click="openRegister = !openRegister">{{ language.main[82] }}</button>
     </div>
   </section>
 
@@ -158,15 +157,15 @@ import '../../../public/styles/ForRealtors.css'
           <div class="slide"  >
             <img   src="../../../public/images/img/forBuilders/4.png">
             <div>
-              <h5>Получайте теплые лиды</h5>
-              <button>Новинка</button>
+              <h5>{{ language.main[85] }}</h5>
+              <button>{{ language.main[86] }}</button>
             </div>
           </div>
         </div>
         <div class="rightImg"></div>
       </div>
 
-      <button @click="openLoginRealtor = !openLoginRealtor">Добавить объект на платформу</button>
+      <button @click="openLoginRealtor = !openLoginRealtor">{{ language.main[81] }}</button>
     </div>
   </section>
 
@@ -175,14 +174,14 @@ import '../../../public/styles/ForRealtors.css'
     <div class="container">
       <div class="rowLowSecion">
         <div class="left">
-          <h2>Скачайте приложение  globoos</h2>
+          <h2>{{ language.main[83] }}</h2>
           <div class="col-refs-prog">
             <img class="shtrich" src="https://s3-alpha-sig.figma.com/img/d519/8dd8/f1b8958dc8868c4d7bf9f9fec68fff2f?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SjJqpzVDmVHNWJSqjbQhcYSo~1HGsI4Bi0OQyX0EdfSVM7fRNAIBUgfQ076vn9Mal2LcQ9HGcQkgaTSUDzBQRdoawcAuW55q~bF5IqNK0cEcDStcb-kTRTg~9UfRjkGWxPB2Q8Fy~rDwe3htMpvrg~zPwpBVnOGZ0quvCa16xjhEm3K2hzgh8c8hsTx1wx8UhlNE~SI6Ok63hnl7IbKYo1sxvnyMMW4BiohPhWUMCJK-1p12syhT1Rg6Rb0XA916vijDb0STIiqPCccVPSupGcTU51MVV5YR81nJuT3euTW7zHcHITilRckj9UjmIfDtnt9kygWNucMDFcDW9xYO5Q__">
             <img class="platform" src="../../../public/images/img/lowSection/1.png"/>
           </div>
         </div>
         <div class="right">
-          <h2>Свяжитесь с нашим  менеджером</h2>
+          <h2>{{ language.main[84] }}</h2>
           <div class="row-refs">
             <p>
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +195,7 @@ import '../../../public/styles/ForRealtors.css'
                   </clipPath>
                 </defs>
               </svg>
-              <span>Написать Whatsapp</span>
+              <span>{{ language.main[87] }}</span>
             </p>
             <p>info@globoos.com</p>
           </div>

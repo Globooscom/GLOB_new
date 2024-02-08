@@ -212,8 +212,8 @@ header span.select-lang {
 }
 
 header .lang .select {
-    width: 4.895833333333333vw;
-    left: calc(50% - 2.9vw);
+    width: 3.895833333333333vw;
+    left: calc(50% - 2.4vw);
     text-align: center;
     padding-top: 3.1770833333333335vw;
     top: 0px;
@@ -388,7 +388,7 @@ header {
 .rowInfo .row-info{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 30px;
 }
 .rowInfo .row-info .block{

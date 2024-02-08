@@ -9,24 +9,29 @@
     <div ref="lang"
       class="flex h-full text-white items-center cursor-pointer px-7 xxl:px-5 xl:px-4 lg:px-3 gap-2.5 xl:gap-1.5"
       @click="langOptionVisible = !langOptionVisible">
-      <span class="select-lang">{{ langSelected }}</span>
+      <span class="select-lang">
+         <img v-if="langSelected=='ru'" class="flags" src="../../../public/images/img/flags/flag-ru-svgrepo-com.svg">
+        <img  v-if="langSelected=='en'" class="flags" src="../../../public/images/img/flags/flag-gb-svgrepo-com.svg">
+        <img  v-if="langSelected=='tr'" class="flags" src="../../../public/images/img/flags/flag-tr-svgrepo-com.svg">
+      </span>
       <img src="../../assets/svg/arrow_down.svg" class="w-2.5 xxl:w-2 xl:w-[7px] lg:w-2" alt="Стрелочка вниз"
         :class="{ 'rotate-180': langOptionVisible }">
     </div>
 
-    <div  v-if="langOptionVisible"
+    <div
+      v-if="langOptionVisible"
       class="select border border-solid overflow-hidden border-[#E5DFEE] absolute top-[90%] w-full left-0 flex flex-col bg-white rounded-[5px]">
       <span @click="selectOption('ru'),langOptionVisible = !langOptionVisible"
         class="hover__select   cursor-pointer leading-none p-4 xxl:p-3 xl:p-2.5">
-        RU
+        <img  class="flags" src="../../../public/images/img/flags/flag-ru-svgrepo-com.svg">
       </span>
       <span @click="selectOption('en'),langOptionVisible = !langOptionVisible"
         class="hover__select   cursor-pointer leading-none p-4 xxl:p-3 xl:p-2.5">
-        EN
+          <img class="flags" src="../../../public/images/img/flags/flag-gb-svgrepo-com.svg">
       </span>
       <span @click="selectOption('tr'),langOptionVisible = !langOptionVisible"
         class="hover__select   cursor-pointer leading-none p-4 xxl:p-3 xl:p-2.5">
-        TR
+          <img  class="flags" src="../../../public/images/img/flags/flag-tr-svgrepo-com.svg">
       </span>
     </div>
   </div>
@@ -84,4 +89,10 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.flags{
+  width: 40px;
+  display: block;
+ margin: 0 auto;
+}
+</style>
