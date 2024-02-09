@@ -2,7 +2,7 @@
 <template>
   <AppChessScheme v-if="scheme" :flat="selectFlat" @closeChess="scheme = false" :language="language"></AppChessScheme>
   <header class="relative">
-    <div class="bg-[#6435A5] h-[60px] xxl:h-12 xl:h-10 lg:h-12">
+    <div class="bg-[#255ECC]  h-[60px] xxl:h-12 xl:h-10 lg:h-12">
       <div class="_container h-full text-[16px] xxl:text-[13px] xl:text-[11px]">
         <div class="flex items-center justify-between h-full">
           <Link href="/houses" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
@@ -45,13 +45,13 @@
                   class="flex items-center justify-center uppercase border border-solid border-[#30CB49] h-fit text-[#30CB49] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-if="house.created && !Number.isInteger(+house.created[0])">{{ language.rielt_1[10] }}</span>
                 <span
-                  class="flex items-center justify-center uppercase border border-solid border-[#E84680] h-fit text-[#E84680] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
+                  class="flex items-center justify-center uppercase border border-solid border-[#255ECC]  h-fit text-[#255ECC]  leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-else-if="house.created">{{ house.created }}</span>
                 <span
                   class="flex items-center justify-center text-white font-semibold bg-[#FA8D50] leading-none rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-if="house.promotion">{{ language.rielt_1[52] }}</span>
                 <span
-                  class="flex items-center justify-center text-white font-semibold bg-[#E84680] leading-none rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
+                  class="flex items-center justify-center text-white font-semibold bg-[#255ECC] leading-none rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-if="Math.ceil(Math.abs(new Date().getTime() - new Date(house.created_at).getTime()) / (1000 * 3600 * 24)) <= 30">{{
                     language.rielt_1[51] }}</span>
                 <span
@@ -124,7 +124,7 @@
             </p>
             <button class="flex gap-2 xxl:gap-1.5 xl:gap-1 w-fit items-center animation__arrow"
                     @click="fullDescription = !fullDescription">
-              <span class="text-[#6435A5] font-medium text-sm xxl:text-xs xl:text-[10px] lg:text-[12px]">{{
+              <span class="text-[#255ECC] font-medium text-sm xxl:text-xs xl:text-[10px] lg:text-[12px]">{{
                 fullDescription ? language.menu_zastr_1[11] : language.menu_zastr_1[14] }}</span>
               <img src="../../../assets/svg/arrow_right_purple.svg"
                    class="transition-all duration-300 w-3.5 xxl:w-3 xl:wp-2.5" alt="Стрелочка в право">
@@ -135,7 +135,7 @@
             <span class="font-medium">{{ language.dob_ob_1[13] }}</span>
             <div class="flex flex-wrap gap-3 xxl:gap-2.5 xl:gap-2m pt-4 xxl:pt-3 xl:pt-2.5">
               <span
-                class="infrostruct__banner text-[#E84680] rounded-[12px] xl:rounded-[8px] leading-none px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2 xl:py-1.5"
+                class="infrostruct__banner text-[#255ECC]  rounded-[12px] xl:rounded-[8px] leading-none px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2 xl:py-1.5"
                 v-for="item in arrayInfos">{{ selectLanguage === 0 ? item.name : selectLanguage === 1 ? item.name_en :
                   item.name_tr }}</span>
             </div>
@@ -153,7 +153,7 @@
                     <img src="../../../assets/svg/check_icon.svg" class="w-5 xxl:w-4 xl:w-3" alt="">
                   </div>
                   <div v-else
-                       class="bg-[#E84680] h-5 w-5 xxl:h-4 xxl:w-4 xl:h-3 xl:w-3 rounded-full flex items-center justify-center">
+                       class="bg-[#255ECC] h-5 w-5 xxl:h-4 xxl:w-4 xl:h-3 xl:w-3 rounded-full flex items-center justify-center">
                     <img src="../../../assets/svg/exit_icon_white.svg" class="w-5 xxl:w-4 xl:w-3" alt="">
                   </div>
                 </div>
@@ -361,18 +361,18 @@
 
             <!--    Когда квартир нет-->
             <div class="border__top py-12 xxl:py-10 xl:py-8" v-if="flats_array && flats_array.length === 0">
-              <div class="flex justify-between md:flex-col items-center rounded-[10px] bg-[#F6F3FA] p-10 xxl:p-8 xl:p-6">
+              <div class="flex justify-between md:flex-col items-center rounded-[10px] bg-[#f5f5f5]   p-10 xxl:p-8 xl:p-6">
                 <div class="flex flex-col">
                   <span class="text-[20px] xxl:text-[17px] xl:text-[14px] lg:text-[17px] font-medium">{{ language.ob[21]
                   }}</span>
                   <p class="w-[70%] md:w-full text-[#8A8996] text-[16px] xxl:text-[14px] xl:text-[12px] lg:text-[14px]">
                   </p>
                 </div>
-                <svg class="h-full" width="162" height="113" viewBox="0 0 162 113" fill="#6435A5"
+                <svg class="h-full" width="162" height="113" viewBox="0 0 162 113" fill="#255ECC"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="162" height="113" fill="url(#pattern0)" />
                   <defs>
-                    <pattern fill="#6435A5" id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <pattern fill="#255ECC" id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                       <use xlink:href="#image0_134_1230"
                            transform="translate(0 -0.0526316) scale(0.00306748 0.00438596)" />
                     </pattern>
@@ -402,12 +402,12 @@
               <span class="leading-none">{{ support.link }}</span>
             </div>
             <div class="flex flex-col gap-4 xxl:gap-3 xl:gap-2.5">
-              <div class="flex cursor-pointer bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
+              <div class="flex cursor-pointer bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
                 <img src="../../../assets/svg/chat_tel_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
                 <span
                   class="leading-none text-center w-full text-[#6536A5] text-[16px] xxl:text-[14px] xl:text-[12px] lg:text-[14px]">{{ support.phone }}</span>
               </div>
-              <div class="flex cursor-pointer bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
+              <div class="flex cursor-pointer bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
                    v-if="validEmail(support.email)">
                 <img src="../../../assets/svg/chat_mail_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
                 <span

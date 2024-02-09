@@ -16,7 +16,7 @@
       <div
         class="flex flex-col h-[100vh] gap-5 xxl:gap-4 xl:gap-3 chat__container--flex overflow-y-auto custom__scroll--chess">
 
-        <div class="hint-clients bg-litepink text-[#E84680] text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
+        <div class="hint-clients bg-litepink text-[#255ECC]  text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
           <p class="text-base xxl:text-sm xl:text-xs pb-3 xxl:pb-2 xl:pb-1">
             {{ language.subscription[42] }}
           </p>
@@ -181,7 +181,7 @@
           class="login__btn--bg text-white text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
           {{ language.dob_ob_1[24] }}</button>
         <button @click="closeModal"
-          class="bg-litepink text-[#E84680] text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
+          class="bg-litepink text-[#255ECC]  text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
           {{ language.izbr_1[4] }}</button>
       </div>
     </div>

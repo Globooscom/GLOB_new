@@ -18,7 +18,7 @@
               class="border uppercase border-solid border-[#30CB49] text-[#30CB49] text-[14px] xxl:text-[12px] xl:text-[10px] px-2 xl:px-1.5 py-1.5 xl:py-1 rounded-[3px] leading-none"
               v-if="house.created && !Number.isInteger(+house.created[0])">{{ getLabel(house.created) }}</span>
             <span
-              class="border uppercase border-solid border-[#E84680] text-[#E84680] text-[14px] xxl:text-[12px] xl:text-[10px] px-2 xl:px-1.5 py-1.5 xl:py-1 rounded-[3px] leading-none"
+              class="border uppercase border-solid border-[#255ECC]  text-[#255ECC]  text-[14px] xxl:text-[12px] xl:text-[10px] px-2 xl:px-1.5 py-1.5 xl:py-1 rounded-[3px] leading-none"
               v-else-if="house.created">{{ house.created }}</span>
           </div>
           <span class="text-[#8A8996] text-[14px] xxl:text-[12px] xl:text-[10px] leading-none mt-2">{{ getCity(house.city) }}, {{ getArea(house.area) }}</span>
@@ -50,7 +50,7 @@
         <div v-if="buttonSelection"
              class="px-8 xxl:px-6 xl:px-5 pb-8 xxl:pb-6 xl:pb-5 flex gap-4 xxl:gap-3 xl:gap-2.5 w-full text-lg xxl:text-[15px] xl:text-[13px]">
           <button @click="openCreate"
-                  class="w-full bg-litepink text-[#E84680] leading-none font-medium rounded-[5px] p-5 xxl:p-4 xl:p-3">
+                  class="w-full bg-litepink text-[#255ECC]  leading-none font-medium rounded-[5px] p-5 xxl:p-4 xl:p-3">
             {{ language.rielt_3[6] }}
           </button>
           <button @click="addSelection"
@@ -62,11 +62,11 @@
              class="px-8 xxl:px-6 xl:px-5 pb-8 xxl:pb-6 xl:pb-5 flex sm:flex-col gap-4 xxl:gap-3 xl:gap-2.5 w-full text-lg xxl:text-[15px] xl:text-[13px] ">
           <div class="relative w-[64%] sm:w-full">
             <input v-model="titleNewCompilation"
-                   class="w-full h-full placeholder-[#8A8996] pr-12 xxl:pr-10 xl:pr-8 text-[16px] xxl:text-[14px] xl:text-[12px] focus:ring-[#6435A5] border border-solid border-[#E84680] rounded-[5px]"
+                   class="w-full h-full placeholder-[#8A8996] pr-12 xxl:pr-10 xl:pr-8 text-[16px] xxl:text-[14px] xl:text-[12px] focus:ring-[#255ECC] border border-solid border-[#255ECC]  rounded-[5px]"
                    :placeholder="language.rielt_3[8]" type="text">
             <button @click="closeCreate" class="absolute w-3 h-3 top-1/2 right-0 -translate-x-full -translate-y-1/2">
-              <span class="absolute h-[1px] top-1/2 left-0 w-3 bg-[#E84680] rotate-45"></span>
-              <span class="absolute h-[1px] top-1/2 left-0 w-3 bg-[#E84680] -rotate-45"></span>
+              <span class="absolute h-[1px] top-1/2 left-0 w-3 bg-[#255ECC] rotate-45"></span>
+              <span class="absolute h-[1px] top-1/2 left-0 w-3 bg-[#255ECC] -rotate-45"></span>
             </button>
           </div>
           <button @click="$emit('open-i-create-selections', titleNewCompilation)"

@@ -62,27 +62,27 @@
         <input type="number" v-bind:class="{ 'Error': One_error }" v-model="One"
                @input="changeValueOne"
                ref="item1"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
         <input type="number" v-bind:class="{ 'Error': Two_error }" v-model="Two"
                @input="changeValueTwo"
                ref="item2"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
         <input type="number" v-bind:class="{ 'Error': Three_error }" v-model="Three"
                @input="changeValueThree"
                ref="item3"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
         <input type="number" v-bind:class="{ 'Error': Four_error }" v-model="Four"
                @input="changeValueFour"
                ref="item4"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
         <input type="number" v-bind:class="{ 'Error': Five_error }" v-model="Five"
                @input="changeValueFive"
                ref="item5"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
         <input type="number" v-bind:class="{ 'Error': Six_error }" v-model="Six"
                @input="changeValueSix"
                ref="item6"
-               class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
+               class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">
       </div>
 
       <button
@@ -102,7 +102,7 @@
       </button>
 
       <div class="flex items-center justify-center text-base xxl:text-sm xl:text-xs">
-        <button @click="openLoginDeveloper" class="text-[#E84680] login-ref">{{ language.po_v_r[3] }}</button>
+        <button @click="openLoginDeveloper" class="text-[#255ECC]  login-ref">{{ language.po_v_r[3] }}</button>
       </div>
     </div>
     <div @click="closeModal" class="modal-bg absolute bg-black opacity-50 h-full w-full z-40"></div>
@@ -120,14 +120,14 @@
   <!--      </div>-->
   <!--      <p class="text-[#8A8996] mb-5 xxl:mb-4 xl:mb-3 text-center text-base xxl:text-[13px] xl:text-[11px]">На номер +{{ phone }} был отправлен код</p>-->
   <!--      <div class="modal__telephone-cod gap-5 xxl:gap-4 xl:gap-3 mb-7 xxl:mb-6 xl:mb-5">-->
-  <!--        <input type="number" v-bind:class="{ 'Error': valueTelOne_error }" v-model="valueTelOne" @input="changeValueOne" ref="item1" class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
-  <!--        <input type="number" v-bind:class="{ 'Error': valueTelTwo_error }" v-model="valueTelTwo" @input="changeValueTwo" ref="item2" class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
-  <!--        <input type="number" v-bind:class="{ 'Error': valueTelThree_error }" v-model="valueTelThree" @input="changeValueThree" ref="item3" class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
-  <!--        <input type="number" v-bind:class="{ 'Error': valueTelFour_error }" v-model="valueTelFour" @input="changeValueFour" ref="item4" class="border-transparent focus:border-[#6435A5] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
+  <!--        <input type="number" v-bind:class="{ 'Error': valueTelOne_error }" v-model="valueTelOne" @input="changeValueOne" ref="item1" class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
+  <!--        <input type="number" v-bind:class="{ 'Error': valueTelTwo_error }" v-model="valueTelTwo" @input="changeValueTwo" ref="item2" class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
+  <!--        <input type="number" v-bind:class="{ 'Error': valueTelThree_error }" v-model="valueTelThree" @input="changeValueThree" ref="item3" class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
+  <!--        <input type="number" v-bind:class="{ 'Error': valueTelFour_error }" v-model="valueTelFour" @input="changeValueFour" ref="item4" class="border-transparent focus:border-[#255ECC] focus:ring-0 text-center text-[36px] xxl:text-[30px] xl:text-[24px] p-2.5 xxl:p-2 xl:p-1.5">-->
   <!--      </div>-->
   <!--      <div class="flex flex-col items-center mb-10 xxl:mb-8 xl:mb-6 text-base xxl:text-[13px] xl:text-[11px]">-->
-  <!--&lt;!&ndash;        <span class="text-[#8A8996]">Отправить код еще раз через <span class="text-[#E84680]"> {{  }} </span></span>&ndash;&gt;-->
-  <!--        <button class="text-[#E84680]" v-on:click="oOpenRegister = false">Ввести другой номер</button>-->
+  <!--&lt;!&ndash;        <span class="text-[#8A8996]">Отправить код еще раз через <span class="text-[#255ECC] "> {{  }} </span></span>&ndash;&gt;-->
+  <!--        <button class="text-[#255ECC] " v-on:click="oOpenRegister = false">Ввести другой номер</button>-->
   <!--      </div>-->
   <!--      <div class="mb-8 xxl:mb-6 xl:mb-5 flex justify-center">-->
   <!--        <input class="custom__checkbox" type="checkbox" id="privacy-policy" checked>-->
@@ -179,7 +179,7 @@
         </button>
       </form>
       <div class="flex items-center justify-center text-base xxl:text-sm xl:text-xs">
-        <button @click="openLoginRealtor" class="text-[#E84680] login-ref">{{ language.po_v_r[10] }}</button>
+        <button @click="openLoginRealtor" class="text-[#255ECC]  login-ref">{{ language.po_v_r[10] }}</button>
       </div>
     </div>
     <div @click="closeModal" class="modal-bg absolute bg-black opacity-50 h-full w-full z-40"></div>

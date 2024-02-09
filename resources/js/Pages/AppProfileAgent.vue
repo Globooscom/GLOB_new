@@ -26,7 +26,7 @@
                       <img src="../../assets/svg/upload_photo.svg" class="w-12 xxl:w-10 xl:w-8" alt="">
                     </label>
                     <input class="w-full h-full rounded-full opacity-0 absolute top-0 left-0 pointer-events-none" id="avatar" type="file" ref="user_avatar" @change="saveEdit">
-                    <label class="h-12 xxl:h-10 xl:h-8 w-12 xxl:w-10 xl:w-8 cursor-pointer bg-[#6435A5] flex justify-center items-center rounded-full absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2" for="avatar">
+                    <label class="h-12 xxl:h-10 xl:h-8 w-12 xxl:w-10 xl:w-8 cursor-pointer bg-[#255ECC]  flex justify-center items-center rounded-full absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2" for="avatar">
                       <svg class="w-6 xxl:w-5 xl:w-4" viewBox="0 0 28 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.25 15.75V19.5H28V22H24.25V25.75H21.75V22H18V19.5H21.75V15.75H24.25ZM24.26 0.75C24.945 0.75 25.5 1.30625 25.5 1.99125V13.25H23V3.25H3V20.7488L15.5 8.25L19.25 12V15.5363L15.5 11.7863L6.53375 20.75H15.5V23.25H1.74C1.41102 23.2497 1.09562 23.1187 0.863112 22.886C0.630603 22.6533 0.5 22.3377 0.5 22.0088V1.99125C0.502288 1.66297 0.633625 1.34877 0.865641 1.11652C1.09766 0.884272 1.41173 0.752618 1.74 0.75H24.26ZM8 5.75C8.66304 5.75 9.29893 6.01339 9.76777 6.48223C10.2366 6.95107 10.5 7.58696 10.5 8.25C10.5 8.91304 10.2366 9.54893 9.76777 10.0178C9.29893 10.4866 8.66304 10.75 8 10.75C7.33696 10.75 6.70107 10.4866 6.23223 10.0178C5.76339 9.54893 5.5 8.91304 5.5 8.25C5.5 7.58696 5.76339 6.95107 6.23223 6.48223C6.70107 6.01339 7.33696 5.75 8 5.75Z" fill="#fff"/>
                       </svg>
@@ -34,12 +34,12 @@
                   </div>
                 </div>
               </div>
-              <div class="bg-[#F6F3FA] w-full flex flex-col rounded-[10px]">
+              <div class="bg-[#f5f5f5]   w-full flex flex-col rounded-[10px]">
 
                <div class="flex flex-col gap-2.5 xxl:gap-2 xl:gap-1.5 p-5 xxl:p-4 xl:p-3">
                  <span class="text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] leading-none">{{ language.prof_rielt[10] }}</span>
                  <span class="text-[#8A8996] text-[14px] xxl:text-[12px] xl:text-[10px] lg:text-[13px] leading-none" v-if="user.subscription">
-                   {{ language.prof_rielt[11] }}: <span class="text-[#E84680]">{{ new Date(Date.parse(user.subscription_info.finished_at)).toISOString().replace(/^([^T]+)T(.+)$/,'$1').replace(/^(\d+)-(\d+)-(\d+)$/,'$3.$2.$1') }}</span>
+                   {{ language.prof_rielt[11] }}: <span class="text-[#255ECC] ">{{ new Date(Date.parse(user.subscription_info.finished_at)).toISOString().replace(/^([^T]+)T(.+)$/,'$1').replace(/^(\d+)-(\d+)-(\d+)$/,'$3.$2.$1') }}</span>
                  </span>
                </div>
 
@@ -48,8 +48,8 @@
                 <!--Текст про подписки-->
                 <div class="text-hint red" v-if="!user.subscription">{{ language.subscription[0] }}</div>
                 <div class="text-hint"  v-if="!user.subscription">{{ language.subscription[1] }}</div>
-                <button @click="openPayProfile = true" class="hover__button--purple transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">{{ language.prof_rielt[15] + ' TR' }}</button>
-                <button @click="openPayRusProfile = true" class="hover__button--purple transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">{{ language.prof_rielt[15] + ' RUB' }}</button>
+                <button @click="openPayProfile = true" class="hover__button--purple transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">{{ language.prof_rielt[15] + ' TR' }}</button>
+                <button @click="openPayRusProfile = true" class="hover__button--purple transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">{{ language.prof_rielt[15] + ' RUB' }}</button>
               </div>
             </div>
             <div>
@@ -90,7 +90,7 @@
                   <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[13px] lg:text-[13px]" for="talk">{{language.prof_rielt[12]}}</label>
                   <textarea v-model="profile.description" maxlength="250" @input="lengthTextarea = profile.description.length" class="custom__scroll-grey text-[#1E1D2D] resize-none h-[90px] xxl:h-[80px] xl:h-[70px] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] p-0 leading-none focus:ring-0" type="text" id="talk" :placeholder="language.prof_rielt[12]"></textarea>
                 </div>
-                <button @click="saveEdit" class="hover__button--purple transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5 leading-none text-white rounded-[5px]">{{language.dob_ob_1[24]}}</button>
+                <button @click="saveEdit" class="hover__button--purple transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5 leading-none text-white rounded-[5px]">{{language.dob_ob_1[24]}}</button>
               </div>
             </div>
             <div class="flex flex-col">
@@ -105,13 +105,13 @@
                 </div>
                 <div v-if="user.verification === null">
                   <button @click="openModalVer = true"
-                          class="hover__button--purple max-w-[170px] ml-[0px] transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
+                          class="hover__button--purple max-w-[170px] ml-[0px] transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
                     {{ language.subscription[5] }}
                   </button>
                 </div>
                 <div v-else-if="user.verification.isVerification !== 2">
                   <button @click="openModalVer = true"
-                          class="hover__button--purple max-w-[170px] ml-[0px] transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
+                          class="hover__button--purple max-w-[170px] ml-[0px] transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
                     {{ language.subscription[5] }}
                   </button>
                 </div>
@@ -126,7 +126,7 @@
                   </div>
                   <div class="relative shrink-0 h-[78px] xxl:h-[61px] xl:h-[55px] w-[78px] xxl:w-[61px] xl:w-[55px] rounded-full">
                     <img class="absolute object-cover w-full h-full rounded-full" v-if="user.company && user.company.image" :src="user.company.image" alt="">
-                    <button v-if="agency" @click="deletePhoto" class="absolute rounded-full bg-[#E84680] z-10 top-0 left-0 h-5 xxl:h-4.5 xl:h-4 w-5 xxl:w-4.5 xl:w-4">
+                    <button v-if="agency" @click="deletePhoto" class="absolute rounded-full bg-[#255ECC] z-10 top-0 left-0 h-5 xxl:h-4.5 xl:h-4 w-5 xxl:w-4.5 xl:w-4">
                       <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white h-[1px] w-[60%]"></span>
                       <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-white h-[1px] w-[60%]"></span>
                     </button>
@@ -143,7 +143,7 @@
               <div class="relative my-7 xxl:my-5 xl:my-4">
                 <img :src="user.company.banner" v-if="user.company && user.company.banner" class="w-full h-[6.56vw] rounded-[10px]">
 <!--                      <img :src="'/storage/user/' + user.image">-->
-<!--                      <span class="text-[#6435A5] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] font-semibold leading-none">1920 x 260 px</span>-->
+<!--                      <span class="text-[#255ECC] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] font-semibold leading-none">1920 x 260 px</span>-->
 <!--                    <span class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[13px] leading-none">Загрузить обложку</span>-->
 <!--                <input class="pointer-events-none overflow-hidden absolute top-0 left-0 opacity-0" id="cover" type="file" ref="banner" @change="changeBanner">-->
               </div>
@@ -175,7 +175,7 @@
       </div>
     </div>
   </main>
-  <app-footer :language="language" />
+  
 </template>
 
 <script>
@@ -422,11 +422,11 @@ h3 span{
     font-weight: 500;
     border-radius: 6px;
     margin: 10px auto;
-    color: rgb(100 53 165 );
+    color:#255ECC
 }
 
 .text-hint.red{
-  color:rgb(232 70 128 )
+  color:#255ECC
 }
 
 .row-status{
@@ -463,7 +463,7 @@ h3 span{
   background: rgb(232 70 128 );
 }
 .row-status h3.orange{
-  background: rgb(246 243 250);
+  background: #255ECC;
   color: rgb(100 53 165 );
 }
 .row-status h3.green{

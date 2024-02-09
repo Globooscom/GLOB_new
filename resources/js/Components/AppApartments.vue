@@ -6,7 +6,7 @@ import { Link } from '@inertiajs/inertia-vue3'
   <h2 class="font-semibold text-[22px] xxl:text-[18px] xl:text-[15px] mb-5 xxl:mb-4 xl:mb-3">{{ language.dob_kv_1[0] }}</h2>
   <div class="flex flex-col">
     <div class="grid grid-cols-6 lg:grid-cols-4 sm:grid-cols-3 gap-3 xxl:gap-2.5 xl:gap-2">
-      <div @click="targetFrame(frame, idx)" v-for="(frame, idx) in house.frames" :class="{ 'border-white': frame.active !== 1 }" class="corpus__banner flex justify-between cursor-pointer rounded-[5px] border border-solid border-[#6435A5] px-5 xxl:px-4 xl:px-3 py-5 xxl:py-4 xl:py-3">
+      <div @click="targetFrame(frame, idx)" v-for="(frame, idx) in house.frames" :class="{ 'border-white': frame.active !== 1 }" class="corpus__banner flex justify-between cursor-pointer rounded-[5px] border border-solid border-[#255ECC] px-5 xxl:px-4 xl:px-3 py-5 xxl:py-4 xl:py-3">
         <div class="flex flex-col justify-center gap-3.5 xxl:gap-3 xl:gap-2.5">
           <span class="text-[#1E1D2D] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] leading-none whitespace-nowrap">{{ frame.name }}</span>
           <span class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none whitespace-nowrap" v-if="frame.flats">{{ frame.flats.length }} {{ frame.flats.length === 1 ? language.dob_kv_1[15] : frame.flats.length === 2 || frame.flats.length === 3 || frame.flats.length === 4 ? language.dob_kv_1[16] : language.dob_kv_1[17] }}</span>
@@ -41,10 +41,10 @@ import { Link } from '@inertiajs/inertia-vue3'
           <span class="leading-none">{{ item.title }}</span>
           <div v-if="item.filter" @click="changeFilter(item)" class="flex flex-col gap-[1px] xl:gap-[0.5px]">
             <svg class="cursor-pointer rotate-180 w-[9px] h-[7px] w-[9px] xxl:w-[8px] xl:w-[7px]" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path :class="{ 'fill-[#6435A5]': item.active === 1 }" d="M4.5 7L8.39711 0.25H0.602886L4.5 7Z" fill="#E5DFEE"/>
+              <path :class="{ 'fill-[#255ECC]': item.active === 1 }" d="M4.5 7L8.39711 0.25H0.602886L4.5 7Z" fill="#E5DFEE"/>
             </svg>
             <svg class="cursor-pointer w-[9px] xxl:w-[8px] xl:w-[7px] h-[7px]" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path :class="{ 'fill-[#6435A5]': item.active === 2 }" d="M4.5 7L8.39711 0.25H0.602886L4.5 7Z" fill="#E5DFEE"/>
+              <path :class="{ 'fill-[#255ECC]': item.active === 2 }" d="M4.5 7L8.39711 0.25H0.602886L4.5 7Z" fill="#E5DFEE"/>
             </svg>
           </div>
         </div>

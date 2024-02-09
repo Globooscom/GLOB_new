@@ -44,7 +44,7 @@
                   class="text-white text-[14px] xxl:text-[12px] xl:text-[10px] leading-none bg-[#30CB49] px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 rounded-[3px]"
                   v-if="house.created && !Number.isInteger(+house.created[0])">{{ house.created }}</span>
                 <span
-                  class="text-white text-[14px] xxl:text-[12px] xl:text-[10px] leading-none bg-[#E84680] px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 rounded-[3px]"
+                  class="text-white text-[14px] xxl:text-[12px] xl:text-[10px] leading-none bg-[#255ECC] px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 rounded-[3px]"
                   v-else-if="house.created">{{ house.created }}</span>
                 <!--               <span class="border border-solid border-[#E5DFEE] text-[#8A8996] text-[14px] xxl:text-[12px]  xl:text-[10px] leading-none px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 rounded-[3px]">Договор займа</span>-->
               </div>
@@ -61,7 +61,7 @@
               </div>
               <div class="grid grid-cols-2 gap-5 xxl:gap-4 xl:gap-3 w-full">
                 <button @click="$emit('open-add-selections', house)"
-                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2  border border-solid border-[#6435A5] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
+                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2  border border-solid border-[#255ECC] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
                   <span
                     class="text-[14px] xxl:text-[12px] xl:text-[10px] leading-none whitespace-nowrap">{{ language.rielt_1[14] }}</span>
                   <svg width="16" height="16" class="w-4.5 xxl:w-4 xl:w-3.5" viewBox="0 0 16 16" fill="none"
@@ -69,7 +69,7 @@
                     <g clip-path="url(#clip0_519_1862)">
                       <path
                         d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z"
-                        fill="#6435A5"/>
+                        fill="#255ECC"/>
                     </g>
                     <defs>
                       <clipPath id="clip0_519_1862">
@@ -79,13 +79,13 @@
                   </svg>
                 </button>
                 <button v-if="house.favorite" @click="removeFavorite"
-                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2 border border-solid border-[#6435A5] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
+                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2 border border-solid border-[#255ECC] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
                   <span
                     class="text-[14px] xxl:text-[12px] xl:text-[10px] leading-none whitespace-nowrap">{{ language.rielt_1[16] }}</span>
                   <img src="../../assets/svg/heart_icon_pink.svg" class="w-4 xxl:w-3.5 xl:w-3" alt="">
                 </button>
                 <button v-else @click="addFavorite"
-                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2 border border-solid border-[#6435A5] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
+                        class="register__button--white w-full flex items-center justify-center gap-3 xxl:gap-2.5 xl:gap-2 border border-solid border-[#255ECC] rounded-[4px] py-2 xxl:py-1.5 xl:py-1">
                   <span
                     class="text-[14px] xxl:text-[12px] xl:text-[10px] leading-none whitespace-nowrap">{{ language.rielt_1[16] }}</span>
                   <svg width="16" height="16" class="w-4 xxl:w-3.5 xl:w-3" viewBox="0 0 16 16" fill="none"
@@ -93,7 +93,7 @@
                     <g clip-path="url(#clip0_158_957)">
                       <path
                         d="M9.00075 3.39673C10.7625 1.81498 13.485 1.86748 15.1823 3.56773C16.8788 5.26873 16.9373 7.97774 15.3593 9.74474L8.99925 16.1137L2.64075 9.74474C1.06275 7.97774 1.122 5.26424 2.81775 3.56773C4.5165 1.86974 7.23375 1.81273 9.00075 3.39673V3.39673ZM14.1203 4.62749C12.9953 3.50099 11.1803 3.45524 10.0028 4.51274L9.0015 5.41124L7.9995 4.51349C6.81825 3.45449 5.007 3.50098 3.879 4.62898C2.7615 5.74648 2.70525 7.53524 3.735 8.71724L9 13.9905L14.265 8.71798C15.2955 7.53523 15.2393 5.74874 14.1203 4.62749V4.62749Z"
-                        fill="#6435A5"/>
+                        fill="#255ECC"/>
                     </g>
                     <defs>
                       <clipPath id="clip0_158_957">

@@ -22,12 +22,12 @@
           <div
             class="chat-profile__border flex flex-col gap-4 xxl:gap-3 xl:gap-2.5 bg-white absolute w-full top-full left-0 p-4 xxl:p-3 xl:p-2.5">
             <div
-              class="flex cursor-pointer items-center text-[#6536A5] bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
+              class="flex cursor-pointer items-center text-[#6536A5] bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
               <img src="../../assets/svg/chat_tel_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
               <span class="text-center w-full text-base xxl:text-sm xl:text-xs leading-none">{{ chat_object.to.id === user.id ? chat_object.from.phone : chat_object.to.phone }}</span>
             </div>
             <div
-              class="flex cursor-pointer items-center text-[#6536A5] bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
+              class="flex cursor-pointer items-center text-[#6536A5] bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
               <img src="../../assets/svg/chat_mail_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
               <span class="text-center w-full text-base xxl:text-sm xl:text-xs leading-none">{{ chat_object.to.id === user.id ? chat_object.from.email : chat_object.to.email }}</span>
             </div>
@@ -44,7 +44,7 @@
 
           <div class="my-3 xxl:my-2.5 xl:my-2 w-full flex justify-center">
             <span
-              class="text-[#6435A5] bg__chat--date py-1.5 xxl:py-1 px-2.5 xxl:px-2 xl:px-1.5 text-base xxl:text-sm xl:text-xs leading-none">{{ getDate(key) }}</span>
+              class="text-[#255ECC] bg__chat--date py-1.5 xxl:py-1 px-2.5 xxl:px-2 xl:px-1.5 text-base xxl:text-sm xl:text-xs leading-none">{{ getDate(key) }}</span>
           </div>
 
           <div v-for="mes in message">
@@ -64,7 +64,7 @@
               <div class="flex items-center gap-2.5 xxl:gap-2 xl:gap-1.5">
                 <img :src="user.image !== null ? user.image : '/images/hom.png'" class="w-8 xxl:w-7 xl:w-6" style="border-radius: 50%" alt="">
                 <div
-                  class="relative flex items-baseline bg-[#6435A5] rounded-[100px] text-white gap-2 xxl:gap-1.5 xl:gap-1 py-1.5 xxl:py-1 px-2.5 xxl:px-2 xl:px-1.5">
+                  class="relative flex items-baseline bg-[#255ECC]  rounded-[100px] text-white gap-2 xxl:gap-1.5 xl:gap-1 py-1.5 xxl:py-1 px-2.5 xxl:px-2 xl:px-1.5">
                   <span class="text-base xxl:text-sm xl:text-xs leading-none">{{ mes.message }}</span>
                   <span class="text-white text-[12px] xxl:text-[10px] opacity-60 xl:text-[9px] leading-none">{{ getTime(mes.created_at) }}</span>
                   <img src="../../assets/svg/chat_check_message_white.svg" class="w-5 xxl:w-4 xl:w-3.5 self-end" alt="">
@@ -93,7 +93,7 @@
           <g clip-path="url(#clip0_272_9101)">
             <path
               d="M4.5 19.5004H13.5V16.5004H4.5V2.7694C4.50002 2.63907 4.53401 2.511 4.5986 2.39781C4.66319 2.28461 4.75617 2.19021 4.86836 2.12389C4.98056 2.05757 5.1081 2.02163 5.23841 2.01962C5.36872 2.01761 5.49731 2.04958 5.6115 2.1124L33.3045 17.3434C33.4221 17.4081 33.5201 17.5033 33.5884 17.6188C33.6567 17.7344 33.6928 17.8662 33.6928 18.0004C33.6928 18.1346 33.6567 18.2664 33.5884 18.382C33.5201 18.4975 33.4221 18.5927 33.3045 18.6574L5.6115 33.8884C5.49731 33.9512 5.36872 33.9832 5.23841 33.9812C5.1081 33.9792 4.98056 33.9432 4.86836 33.8769C4.75617 33.8106 4.66319 33.7162 4.5986 33.603C4.53401 33.4898 4.50002 33.3617 4.5 33.2314V19.5004Z"
-              fill="#6435A5"/>
+              fill="#255ECC"/>
           </g>
           <defs>
             <clipPath id="clip0_272_9101">

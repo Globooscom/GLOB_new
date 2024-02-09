@@ -426,12 +426,12 @@
       <div class="grid grid-cols-2 sm:grid-cols-1 gap-10 xxl:gap-8 xl:gap-6 lg:gap-5 my-10 xxl:my-8 xl:my-6 w-full"
            v-if="isEdit">
         <button @click="addAndContinue"
-                class="login__btn--bg w-full text-center mr-4 font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#E84680] rounded-[6px]">
+                class="login__btn--bg w-full text-center mr-4 font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#255ECC] rounded-[6px]">
           {{ language.dob_ob_2[1] }}
         </button>
         <button
           @click="addAndContinue(1)"
-          class="login__btn--bg w-full font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#E84680] rounded-[6px]"
+          class="login__btn--bg w-full font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#255ECC] rounded-[6px]"
         >
           {{ language.ob[33] }}
         </button>
@@ -439,7 +439,7 @@
       <div class="grid gap-10 xxl:gap-8 xl:gap-6 my-10 xxl:my-8 xl:my-6 w-full" v-else>
         <button
           @click="addAndContinue()"
-          class="login__btn--bg w-full font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#E84680] rounded-[6px]"
+          class="login__btn--bg w-full font-semibold leading-none p-5 xxl:p-4 xl:p-3 text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] text-white bg-[#255ECC] rounded-[6px]"
         >
           {{ language.dob_ob_1[24] }}
         </button>

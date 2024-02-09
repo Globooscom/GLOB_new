@@ -51,14 +51,14 @@
               </div>
             </div>
             <div v-if="openInput" class="relative">
-              <input v-model="commentJK" class="w-full text-[#1E1D2D] text-[16px] focus:ring-[#6435A5] focus:border-[#6435A5] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8" type="text">
+              <input v-model="commentJK" class="w-full text-[#1E1D2D] text-[16px] focus:ring-[#255ECC] focus:border-[#255ECC] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8" type="text">
               <img @click="openInput = false" class="absolute cursor-pointer top-1/2 -translate-y-1/2 w-6 xxl:w-5 xl:w-4 right-5 xxl:right-4 xl:right-3" src="../../../assets/svg/close_grey.svg" alt="">
             </div>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-8 xxl:gap-6 xl:gap-5">
           <button @click="createSelection" class="login__btn--bg text-white text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">{{ language.rielt_3[6] }}</button>
-          <button @click="$emit('close-i-create-selection')" class="bg-litepink text-[#E84680] text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
+          <button @click="$emit('close-i-create-selection')" class="bg-litepink text-[#255ECC]  text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
             {{ language.izbr_1[4] }}</button>
         </div>
       </div>

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-[#F6F3FA] border__right">
+  <div class="bg-[#f5f5f5]   border__right">
     <div class="ml-5 exl:ml-[6.25vw] lg:w-[93vw] h-[40vw] py-10 xxl:py-8 xl:py-6 pr-10 xxl:pr-8 xl:pr-6">
       <div class="h-full custom__scroll--chess overflow-scroll">
-        <div class="grid grid__chess--inner gap-2.5 xl:gap-2 text-[#6435A5] text-xs xxl:text-xs xl:text-[8px] lg:text-[10px]">
+        <div class="grid grid__chess--inner gap-2.5 xl:gap-2 text-[#255ECC] text-xs xxl:text-xs xl:text-[8px] lg:text-[10px]">
           <div class="flex gap-2.5 xl:gap-2 items-center">
             <div class="bg-[#E5DFEE] flex-shrink-0 font-semibold relative flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 lg:w-10 lg:h-10 rounded-[5px] border border-solid border-[#E5DFEE]"></div>
             <div v-for="item in house.info.count_flat" class="bg-[#E5DFEE] flex-shrink-0 lg:w-10 lg:h-10 font-semibold relative flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 lg:w-10 lg:h-10 rounded-[5px] border border-solid border-[#E5DFEE]">{{ item }}</div>
@@ -31,12 +31,12 @@
                 </div>
               </div>
               <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count) !== null">
-                <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).status == 0" @click="clickFlat(checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).id)" :class="{'text-white': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1, 'bg_custom_color': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1}" class="relative lg:w-10 lg:h-10 flex-shrink-0 flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 rounded-[5px] border border-solid border-[#E84680] cursor-pointer">
+                <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).status == 0" @click="clickFlat(checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).id)" :class="{'text-white': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1, 'bg_custom_color': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1}" class="relative lg:w-10 lg:h-10 flex-shrink-0 flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 rounded-[5px] border border-solid border-[#255ECC]  cursor-pointer">
                   {{ checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count === 'Duplex' ? 'D' : checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count === 'Studia' ? 'S' : checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count }}
                 </div>
               </div>
               <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count) !== null">
-                <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).status == 1" @click="clickFlat(checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).id)" :class="{'text-white': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1, 'bg_custom_color': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1}" class="relative lg:w-10 lg:h-10 flex-shrink-0 flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 rounded-[5px] border border-solid border-[#6435A5] cursor-pointer">
+                <div v-if="checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).status == 1" @click="clickFlat(checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).id)" :class="{'text-white': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1, 'bg_custom_color': checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).active === 1}" class="relative lg:w-10 lg:h-10 flex-shrink-0 flex items-center justify-center w-12 xxl:w-10 xl:w-8 h-12 xxl:h-10 xl:h-8 rounded-[5px] border border-solid border-[#255ECC] cursor-pointer">
                   {{ checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count === 'Duplex' ? 'D' : checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count === 'Studia' ? 'S' : checkFlat(Math.abs((floor - 1) - (house.info.floors - 1)), count).count }}
                 </div>
               </div>
@@ -102,6 +102,6 @@ export default {
 
 <style>
   .bg_custom_color {
-    background-color: #6435A5;
+    background-color: #255ECC;
   }
 </style>

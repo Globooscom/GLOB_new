@@ -8,10 +8,10 @@ import { Link } from '@inertiajs/inertia-vue3'
     <div class="_container">
       <div class="flex items-center justify-between mt-14 xxl:mt-10 xl:mt-8">
         <h2 class="text-[22px] xxl:text-lg xl:text-[15px] lg:text-[20px] font-semibold">{{ language.menu_zastr[1] }}</h2>
-        <Link href="/profile/news/create" class="register__button--white flex justify-center items-center gap-2 xl:gap-1.5 border border-solid rounded-[5px] border-[#6435A5] px-4 xxl:px-3 xl:px-2.5 py-2.5 xxl:py-2 xl:py-1.5">
+        <Link href="/profile/news/create" class="register__button--white flex justify-center items-center gap-2 xl:gap-1.5 border border-solid rounded-[5px] border-[#255ECC] px-4 xxl:px-3 xl:px-2.5 py-2.5 xxl:py-2 xl:py-1.5">
           <svg width="16" height="16" class="w-4 xxl:w-3.5 xl:w-3 lg:w-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_519_1862)">
-              <path d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z" fill="#6435A5"/>
+              <path d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z" fill="#255ECC"/>
             </g>
             <defs>
               <clipPath id="clip0_519_1862">
@@ -66,7 +66,7 @@ import { Link } from '@inertiajs/inertia-vue3'
       </div>
     </div>
   </main>
-  <app-footer :language="language" />
+  
 </template>
 
 <script>

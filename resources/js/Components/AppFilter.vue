@@ -7,12 +7,12 @@
         <span
           class="text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[16px] leading-none">Фильтры</span>
       <div class="flex items-center gap-4">
-        <button class="text-[#6435A5] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer"
+        <button class="text-[#255ECC] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer"
                 v-on:click="reloadFilter">
           Сбросить
         </button>
         <button @click="openFilter = false"
-                class="hidden lg:block text-[#6435A5] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer">
+                class="hidden lg:block text-[#255ECC] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer">
           Закрыть
         </button>
       </div>
@@ -59,7 +59,7 @@
                    class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div class="relative w-full p-5 xxl:p-4 xl:p-3">
                   <input @click.stop="sea" v-model="searchValue"
-                         class="py-3 xxl:py-2.5 xl:py-2 pl-10 xxl:pl-8 xl:pl-6 focus:ring-[#6435A5] focus:border-[#6435A5] w-full text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] rounded-[6px] leading-none border border-solid border-[#E5DFEE]"
+                         class="py-3 xxl:py-2.5 xl:py-2 pl-10 xxl:pl-8 xl:pl-6 focus:ring-[#255ECC] focus:border-[#255ECC] w-full text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] rounded-[6px] leading-none border border-solid border-[#E5DFEE]"
                          type="text">
                   <img class="absolute top-1/2 -translate-y-1/2 translate-x-1/2 w-4.5 xxl:w-4 xl:w-3.5"
                        src="../../assets/svg/search_icon_grey.svg" alt="">
@@ -107,13 +107,13 @@
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_from">от</label>
                 <input @click="changeBorder(1)" @input="setFilter()" v-model="filters.price.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_before">до</label>
                 <input @click="changeBorder(1)" @input="setFilter()" v-model="filters.price.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_before">
               </div>
             </div>
@@ -131,7 +131,7 @@
                      :class="{ 'rotate-180': openSelectDeadline }" alt="">
               </div>
               <div v-if="openSelectDeadline"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <span
                   v-for="(deadline, idx) in deadlines" :key="idx"
                   @click="changeSelectDeadline(deadline)"
@@ -150,13 +150,13 @@
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="from">от</label>
                 <input @click="changeBorder(2)" @input="setFilter()" v-model="filters.square.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
                        type="number" id="from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="before">до</label>
                 <input @click="changeBorder(2)" @input="setFilter()" v-model="filters.square.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
                        type="number" id="before">
               </div>
             </div>
@@ -174,7 +174,7 @@
                      :class="{ 'rotate-180': openSelectDev }" alt="">
               </div>
               <div v-if="openSelectDev"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <span
                   v-for="(item, idx) in builders" :key="idx"
                   @click="changeSelectDev(item)"
@@ -198,7 +198,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_sea">от моря
                   (м)</label>
                 <input @click="changeBorder(3)" @input="setFilter()" v-model="filters.location.toSea"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_sea">
               </div>
               <div :class="{'border__purple': isBorder === 4 }"
@@ -206,7 +206,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_school">от
                   школы (м)</label>
                 <input @click="changeBorder(4)" @input="setFilter()" v-model="filters.location.toSchool"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_school">
               </div>
               <div :class="{'border__purple': isBorder === 5 }"
@@ -214,7 +214,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_shoping">от
                   торгового центра (м)</label>
                 <input @click="changeBorder(5)" @input="setFilter()" v-model="filters.location.toShop"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_shoping">
               </div>
               <div :class="{'border__purple': isBorder === 6 }"
@@ -222,7 +222,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_park">от парка
                   (м)</label>
                 <input @click="changeBorder(6)" @input="setFilter()" v-model="filters.location.toPark"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_park">
               </div>
               <div :class="{'border__purple': isBorder === 7 }"
@@ -230,7 +230,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_child">от
                   детского садика (м)</label>
                 <input @click="changeBorder(7)" @input="setFilter()" v-model="filters.location.toChildrenSchool"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_child">
               </div>
               <div :class="{'border__purple': isBorder === 8 }"
@@ -238,7 +238,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_stop">от
                   остановки (м)</label>
                 <input @click="changeBorder(8)" @input="setFilter()" v-model="filters.location.toBus"
-                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_stop">
               </div>
             </div>

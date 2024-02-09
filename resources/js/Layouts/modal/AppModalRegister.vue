@@ -84,7 +84,7 @@ const submit = () => {
               :class="{ 'rotate-180': openSelectPlaceWork }" alt="">
           </div>
           <div v-if="openSelectPlaceWork"
-            class="select xxl:max-h-[120px] xl:max-h-[110px] lg:max-h-[80px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F6F3FA] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[15px]">
+            class="select xxl:max-h-[120px] xl:max-h-[110px] lg:max-h-[80px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#f5f5f5]   flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-lg xxl:text-[15px] xl:text-[13px] lg:text-[15px]">
             <span v-for="(type, idx) in types" :key="idx" @click="changeSelectTypes(type), form.type = selectType, form.type_id = type.id"
               class="hover__select cursor-pointer px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2.5 xl:py-2 leading-none">
               {{ type.type }}

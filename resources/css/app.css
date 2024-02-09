@@ -236,7 +236,7 @@ input::placeholder {
 
 .register__button--bg:active {
   background: #fff;
-  color: #6435A5;
+  color: #255ECC;
   transition: all 0.2s;
 }
 
@@ -248,11 +248,11 @@ input::placeholder {
 
 .register__button--white {
   transition: all 0.2s;
-  color: #6435A5;
+  color: #255ECC;
 }
 
 .register__button--white:hover {
-  background: #6435A5;
+  background: #255ECC;
   color: white;
   transition: all 0.2s;
 }
@@ -304,7 +304,7 @@ input::placeholder {
 }
 
 .hover__chat-arrow:active {
-  background: #6435A5;
+  background: #255ECC;
   transition: all 0.15s;
 }
 
@@ -313,7 +313,7 @@ input::placeholder {
 }
 
 .hover__title-block:hover {
-  color: #6435A5;
+  color: #255ECC;
   transition: all 0.2s;
 }
 .more__button:hover{
@@ -419,7 +419,7 @@ input::placeholder {
   height: 24px;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #6435A5;
+  border: 1px solid #255ECC;
   border-radius: 6px;
   margin-right: 12px;
   background-repeat: no-repeat;
@@ -428,8 +428,8 @@ input::placeholder {
 }
 
 .custom__checkbox:checked + label::before {
-  border-color: #6435A5;
-  background-color: #6435A5;
+  border-color: #255ECC;
+  background-color: #255ECC;
   background-image: url("../assets/svg/check_icon.svg");
 }
 
@@ -603,7 +603,7 @@ input::placeholder {
 }
 
 .multiselect-dropdown::-webkit-scrollbar-thumb {
-  background: #6435A5;
+  background: #255ECC;
 }
 
 .multiselect-dropdown::-webkit-scrollbar-track {
@@ -742,11 +742,11 @@ input::placeholder {
 }
 
 .button__map {
-  background: rgba(100, 53, 165, 0.12);
+  background: rgb(245 245 245 );
 }
 
 .button__map:hover {
-  background: #6435A5;
+  background: #255ECC;
   color: #fff;
   transition: all 0.2s;
 }
@@ -757,7 +757,7 @@ input::placeholder {
 }
 
 .button__map:active {
-  background: #492679;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
@@ -769,13 +769,13 @@ input::placeholder {
 }
 
 .button__choices--grid div {
-  background: #6435A5;
+  background: #255ECC;
   opacity: 0.5;
   transition: all 0.2s;
 }
 
 .button__choices--grid:hover {
-  border: 1px solid #6435A5;
+  border: 1px solid #255ECC;
   background: white;
   transition: all 0.2s;
 }
@@ -786,7 +786,7 @@ input::placeholder {
 }
 
 .grid--active {
-  background: #6435A5;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
@@ -797,7 +797,7 @@ input::placeholder {
 }
 
 .grid--active:hover {
-  background: #6435A5;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
@@ -809,13 +809,13 @@ input::placeholder {
 }
 
 .button__choices--col div {
-  background: #6435A5;
+  background: #255ECC;
   opacity: 0.5;
   transition: all 0.2s;
 }
 
 .button__choices--col:hover {
-  border: 1px solid #6435A5;
+  border: 1px solid #255ECC;
   background: white;
   transition: all 0.2s;
 }
@@ -826,12 +826,12 @@ input::placeholder {
 }
 
 .col--active {
-  background: #6435A5;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
 .col--active:hover {
-  background: #6435A5;
+  background: #255ECC;
   transition: all 0.2s;
 }
 
@@ -863,7 +863,7 @@ input::placeholder {
 }
 
 .infrostruct__banner {
-  background: rgba(232, 70, 128, 0.1);
+  background: #f5f5f5;
   box-shadow: 0px 5px 80px rgba(52, 23, 94, 0.05);
 }
 
@@ -873,12 +873,12 @@ input::placeholder {
 
 .hover__select:hover {
   background: #F6F3FA;
-  color: #6435A5;
+  color: #255ECC;
 }
 
 .select__pagination {
   background: #F6F3FA;
-  color: #6435A5;
+  color: #255ECC;
 }
 
 /*****************add-object*******************/
@@ -907,12 +907,12 @@ input::placeholder {
 }
 
 .menu-add-obj {
-  background: #6435A5;
+  background: #255ECC;
   color: #fff;
 }
 
 .hover__menu-add-obj:hover {
-  background: #6435A5;
+  background: #255ECC;
   color: #fff;
 }
 
@@ -927,7 +927,7 @@ input::placeholder {
 .custom__scroll::-webkit-scrollbar-thumb {
   width: 2px;
   border-radius: 100px;
-  background: #6435A5;
+  background: #255ECC;
 }
 
 .border__bottom--0 {
@@ -1252,7 +1252,7 @@ input::placeholder {
 }
 
 .payd__checkbox>input:checked+span::before {
-  border-color: #6435A5;
+  border-color: #255ECC;
   background-color: white;
   background-image: url("../assets/svg/circle_purple.svg");
 }
@@ -1560,7 +1560,7 @@ input::placeholder {
 
 .chess__button--active {
   color: white;
-  background: #6435A5;
+  background: #255ECC;
 }
 
 .chess__button--active path {
@@ -1707,7 +1707,7 @@ input:checked + .slider:before {
 }
 
 .border__purple {
-  border-color: #6435A5;
+  border-color: #255ECC;
 }
 
 .grid__apart-have {

@@ -1,28 +1,28 @@
 <template>
-  <div class="bg-[#F6F3FA] p-7 xxl:p-5 xl:p-5 h-fit rounded-[10px]">
+  <div class="bg-[#f5f5f5]   p-7 xxl:p-5 xl:p-5 h-fit rounded-[10px]">
     <div class="text-sm xxl:text-xs xl:text-[10px] pb-14 xxl:pb-10 xl:pb-8">
       <span class="font-medium text-lg xxl:text-[15px] xl:text-[13px] pt-6 xxl:pt-5 xl:pt-4">Новости</span>
       <div>
         <span class="text-[#8A8996]">15 июля</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        <button class="text-[#6435A5]">Читать далее</button>
+        <button class="text-[#255ECC]">Читать далее</button>
       </div>
       <div class="bg-[#E5DFEE] h-[1px] w-full my-5 xxl:my-4 xl:my-3"></div>
       <div>
         <span class="text-[#8A8996]">15 июля</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        <button class="text-[#6435A5]">Читать далее</button>
+        <button class="text-[#255ECC]">Читать далее</button>
       </div>
       <div class="bg-[#E5DFEE] h-[1px] w-full my-5 xxl:my-4 xl:my-3"></div>
       <div>
         <span class="text-[#8A8996]">15 июля</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        <button class="text-[#6435A5]">Читать далее</button>
+        <button class="text-[#255ECC]">Читать далее</button>
       </div>
       <div class="bg-[#E5DFEE] h-[1px] w-full my-5 xxl:my-4 xl:my-3"></div>
       <div class="flex justify-center w-full">
         <button class="flex items-center gap-2.5 xxl:gap-2 xl:gap-1.5">
-          <span class="text-[#6435A5] text-sm xxl:text-xs xl:text-[10px]">Смотреть все новости (23)</span>
+          <span class="text-[#255ECC] text-sm xxl:text-xs xl:text-[10px]">Смотреть все новости (23)</span>
           <img src="../../assets/svg/arrow_right_purple.svg" class="h-4 xxl:h-3 xl:h-2.5" alt="Стелочка">
         </button>
       </div>
@@ -37,7 +37,7 @@
             <span class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] leading-none">Застройщик</span>
           </div>
         </div>
-        <button class="w-full bg-[#F6F3FA] text-[#6536A5] text-base xxl:text-sm xl:text-xs rounded-[6px] py-4 xxl:py-3 xl:py-2.5">Написать в чат</button>
+        <button class="w-full bg-[#f5f5f5]   text-[#6536A5] text-base xxl:text-sm xl:text-xs rounded-[6px] py-4 xxl:py-3 xl:py-2.5">Написать в чат</button>
       </div>
     </div>
     <div class="pb-14 xxl:pb-10 xl:pb-8">
