@@ -331,6 +331,7 @@
           email: this.developer.email,
           password: this.developer.password,
         });
+        console.log(form)
 
         form.post(route('login'), {});
       },
