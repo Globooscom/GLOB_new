@@ -102,19 +102,14 @@ class AuthenticatedSessionController extends Controller
       Auth::login($user, $remember = true);
 
       if(Auth::user()->checked === 1) {
-
         User::where('id', Auth::id())->update([
           'checked' => 0,
         ]);
 
         return redirect()->intended(RouteServiceProvider::HOME);
-
       } else {
-
         return redirect()->intended(RouteServiceProvider::HOUSES);
-
       }
-
     } else {
       return false;
     }
@@ -139,25 +134,19 @@ class AuthenticatedSessionController extends Controller
     if($user !== null && Hash::check($request->password, $user->password) && $user->deleted !== 1) {
 
       $token = $this->checkSession($user->id);
-
       if($user->deleted !== 1) {
         return response()->json($token, 200);
       } else {
         return response()->json(false, 205);
       }
-
     } else {
-
       if($user === null) {
         return response()->json('Не правильный логин или емеил', 401);
       }
-
       if(!Hash::check($request->password, $user->password)) {
         return response()->json('Не правильный пароль', 401);
       }
-
     }
-
   }
 
   /**

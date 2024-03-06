@@ -14,10 +14,8 @@ class RegisterMailService implements RegisterMailInterface
 
   public function getMail($form)
   {
-
     $this->SendMailAdmin($form);
     $this->sendMailUser($form);
-
   } //end
 
   /**
@@ -126,7 +124,7 @@ class RegisterMailService implements RegisterMailInterface
       ),
       CURLOPT_POSTFIELDS => http_build_query(array(
         'subject' => "Регистрация нового пользователя", // Обязательно
-        'name' => "Evon",
+        'name' => "Globoos",
         'html' => $message, // Обязательно
         'from' => "info@globoos.com", // Обязательно
         'to' => $email, // Обязательно
