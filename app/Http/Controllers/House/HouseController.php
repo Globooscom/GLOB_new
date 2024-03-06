@@ -85,11 +85,11 @@ class HouseController extends Controller
 
   public function index(Request $request, HousesService $housesService, CacheService $cacheService)
   {
-    $houses = Cache::get('houses_full');
-
-    if(!$houses) {
+//    $houses = Cache::get('houses_full');
+//
+//    if(!$houses) {
       $houses = $cacheService->updateCacheHouses($housesService);
-    }
+//    }
 
     return Inertia::render('AppListImmovables', [
       'houses' => $houses,

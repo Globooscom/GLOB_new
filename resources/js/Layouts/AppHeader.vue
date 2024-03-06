@@ -1,5 +1,4 @@
 <script setup>
-import { Link } from '@inertiajs/inertia-vue3'
 import ChangeLanguage from "@/Components/ChangeLanguage.vue";
 </script>
 
@@ -304,10 +303,9 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
 <script>
 import AppBurgerAgent from "@/Layouts/AppBurgerAgent.vue"
 import AppBurgerDev from "@/Layouts/AppBurgerDev.vue"
-import { useForm } from '@inertiajs/inertia-vue3'
 import { router } from '@inertiajs/vue3'
 import { computed } from 'vue'
-import { usePage } from '@inertiajs/inertia-vue3'
+import { usePage, useForm, Link } from '@inertiajs/inertia-vue3'
 
 export default {
   props: {
@@ -458,6 +456,7 @@ export default {
   components: {
     AppBurgerAgent,
     AppBurgerDev,
+    Link
   }
 }
 </script>

@@ -27,7 +27,6 @@ class ProfileController extends Controller
 
   public function index(Request $request)
   {
-
     if (Auth::user()->role !== 0) {
       return Inertia::render('AppProfileDev', [
         'user' => $this->getUser(),
@@ -46,7 +45,6 @@ class ProfileController extends Controller
         'setTrial' => $request->setTrial,
       ]);
     }
-
   }
 
   /**

@@ -210,9 +210,9 @@ import '../../../public/styles/ForRealtors.css'
 </template>
 
 <script>
-import AppHeader from '../Layouts/AppHeader.vue'
-import AppFooter from "../Layouts/AppFooter.vue"
-import AppModalAuth from "../Layouts/modal/AppModalAuth.vue"
+import AppHeader from '@/Layouts/AppHeader.vue'
+import AppFooter from "@/Layouts/AppFooter.vue"
+import AppModalAuth from "@/Layouts/modal/AppModalAuth.vue"
 import { computed } from "vue";
 import { usePage } from "@inertiajs/inertia-vue3";
 import AppModalRegister from "@/Layouts/modal/AppModalRegister.vue";

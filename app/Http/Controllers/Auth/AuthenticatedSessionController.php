@@ -40,7 +40,6 @@ class AuthenticatedSessionController extends Controller
    */
   public function store(Request $request)
   {
-
       $request->validate([
         'password' => ['required', new Password()],
         'email' => ['required', 'max:50', 'exists:App\Models\User,email'],
@@ -58,33 +57,21 @@ class AuthenticatedSessionController extends Controller
         Auth::login($user, $remember = true);
 
         if(Auth::user()->role === 3) {
-
           return redirect()->intended(RouteServiceProvider::ADMIN);
-
         } elseif (Auth::user()->role === 0) {
-
           if(Auth::user()->checked === 1) {
-
             User::where('id', Auth::id())->update([
               'checked' => 0,
             ]);
 
             return redirect()->intended(RouteServiceProvider::HOME);
-
           } else {
-
             return redirect()->intended(RouteServiceProvider::HOUSES);
-
           }
-
         } else {
-
           return redirect()->intended(RouteServiceProvider::HOME);
-
         }
-
       }
-
   }
 
   /**

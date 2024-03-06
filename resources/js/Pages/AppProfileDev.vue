@@ -50,11 +50,11 @@
       </div>
     </div>
   </main>
-  
+
 </template>
 
 <script>
-import AppFooter from "@/Layouts/AppFooter.vue"
+import zAppFooter from "@/Layouts/AppFooter.vue"
 import AppHeader from "@/Layouts/AppHeader.vue"
 import AppModalProfile from "@/Layouts/modal/AppModalProfile.vue"
 

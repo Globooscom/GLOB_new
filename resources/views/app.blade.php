@@ -37,7 +37,7 @@
     <div><img src="https://mc.yandex.ru/watch/93097610" style="position:absolute; left:-9999px;" alt=""/></div>
   </noscript>
 
-  <link rel="stylesheet" href="../../public/styles/fonts.css">
+
   <!-- /Yandex.Metrika counter -->
 
   <!-- Scripts -->
@@ -47,5 +47,6 @@
 </head>
 <body class="antialiased">
 @inertia
+{{--<link rel="stylesheet" href="../../public/styles/fonts.css">--}}
 </body>
 </html>
