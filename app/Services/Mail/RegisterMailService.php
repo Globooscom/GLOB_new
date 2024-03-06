@@ -36,7 +36,7 @@ class RegisterMailService implements RegisterMailInterface
 
                 </p></body></html>";
 
-    return $this->sendMail("evon.information@gmail.com", $message);
+    return $this->sendMail("globoos.com@gmail.com", $message);
   } //end
 
   /**
@@ -126,7 +126,7 @@ class RegisterMailService implements RegisterMailInterface
         'subject' => "Регистрация нового пользователя", // Обязательно
         'name' => "Globoos",
         'html' => $message, // Обязательно
-        'from' => "globoos.com@gmail.com", // Обязательно
+        'from' => "info@globoos.com", // Обязательно
         'to' => $email, // Обязательно
         'headers' => "[{ 'x-tag': 'my_newsletter_ids' }]",
         'text' => "Text version message"
