@@ -85,7 +85,7 @@ class AuthController extends Controller
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
       CURLOPT_CUSTOMREQUEST => "POST",
       CURLOPT_HTTPHEADER => array(
-        "authorization: AwFGFIPriK4AQad1rFXt9ox1c00PT8LjugQ1"
+        "authorization: bZQphHioEQYzavKrPe6z5wU3htZ7MU6NJM4Q"
       ),
       CURLOPT_POSTFIELDS => http_build_query(array(
         'subject' => "Проверочный код", // Обязательно
