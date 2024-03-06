@@ -126,7 +126,7 @@ class RegisterMailService implements RegisterMailInterface
         'subject' => "Регистрация нового пользователя", // Обязательно
         'name' => "Globoos",
         'html' => $message, // Обязательно
-        'from' => "info@globoos.com", // Обязательно
+        'from' => "globoos.com@gmail.com", // Обязательно
         'to' => $email, // Обязательно
         'headers' => "[{ 'x-tag': 'my_newsletter_ids' }]",
         'text' => "Text version message"
