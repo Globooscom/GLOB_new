@@ -38,9 +38,6 @@
   </noscript>
 
   <link rel="stylesheet" href="../../public/styles/fonts.css">
-  <!-- /Yandex.Metrika counter -->
-
-  <!-- Scripts -->
   @routes
   @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
   @inertiaHead

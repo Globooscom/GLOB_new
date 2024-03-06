@@ -122,13 +122,13 @@ class RegisterMailService implements RegisterMailInterface
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
       CURLOPT_CUSTOMREQUEST => "POST",
       CURLOPT_HTTPHEADER => array(
-        "authorization: AwFGFIPriK4AQad1rFXt9ox1c00PT8LjugQ1"
+        "authorization: bZQphHioEQYzavKrPe6z5wU3htZ7MU6NJM4Q"
       ),
       CURLOPT_POSTFIELDS => http_build_query(array(
         'subject' => "Регистрация нового пользователя", // Обязательно
         'name' => "Evon",
         'html' => $message, // Обязательно
-        'from' => "info@evon-tr.com", // Обязательно
+        'from' => "info@globoos.com", // Обязательно
         'to' => $email, // Обязательно
         'headers' => "[{ 'x-tag': 'my_newsletter_ids' }]",
         'text' => "Text version message"

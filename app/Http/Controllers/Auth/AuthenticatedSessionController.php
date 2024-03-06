@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
    * Handle an incoming authentication request.
    *
    * @param \App\Http\Requests\Auth\LoginRequest $request
-   * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+   * @return \Symfony\Component\HttpFoundation\Response
    * @throws \Illuminate\Validation\ValidationException
    */
   public function store(Request $request)
@@ -58,31 +58,21 @@ class AuthenticatedSessionController extends Controller
         Auth::login($user, $remember = true);
 
         if(Auth::user()->role === 3) {
-
-          return redirect()->intended(RouteServiceProvider::ADMIN);
-
+          return Inertia::location(RouteServiceProvider::ADMIN);
         } elseif (Auth::user()->role === 0) {
-
           if(Auth::user()->checked === 1) {
 
             User::where('id', Auth::id())->update([
               'checked' => 0,
             ]);
 
-            return redirect()->intended(RouteServiceProvider::HOME);
-
+            return Inertia::location(RouteServiceProvider::HOME);
           } else {
-
-            return redirect()->intended(RouteServiceProvider::HOUSES);
-
+            return Inertia::location(RouteServiceProvider::HOUSES);
           }
-
         } else {
-
-          return redirect()->intended(RouteServiceProvider::HOME);
-
+          return Inertia::location(RouteServiceProvider::HOME);
         }
-
       }
 
   }

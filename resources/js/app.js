@@ -18,28 +18,28 @@ const imageServiceUrl = 'https://evonimage.biz';
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
-    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
-    setup({ el, app, props, plugin }) {
-        const VueApp = createApp({ render: () => h(app, props) })
+  title: (title) => `${title} - ${appName}`,
+  resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
+  setup({ el, app, props, plugin }) {
+    const VueApp = createApp({ render: () => h(app, props) })
 
-        VueApp.config.globalProperties.globalToken = '6f8be2a8db029ec86bd40833acbbd0c5'
+    VueApp.config.globalProperties.globalToken = '6f8be2a8db029ec86bd40833acbbd0c5'
 
-        VueApp.config.globalProperties.$ru = ru;
-        VueApp.config.globalProperties.$en = en;
-        VueApp.config.globalProperties.$tur = tur;
-        VueApp.config.globalProperties.$service = imageServiceUrl;
+    VueApp.config.globalProperties.$ru = ru;
+    VueApp.config.globalProperties.$en = en;
+    VueApp.config.globalProperties.$tur = tur;
+    VueApp.config.globalProperties.$service = imageServiceUrl;
 
-        VueApp.use(plugin)
-            .use(VueGoogleMaps, {
-                load: {
-                    key: 'AIzaSyBo8Ws9ujugchMacJ3BNAvGWTn6b1cmtJ4',
-                    language: 'ru'
-                }
-            })
-            .use(ZiggyVue, Ziggy)
-            .mount(el);
-    },
+    VueApp.use(plugin)
+      .use(VueGoogleMaps, {
+        load: {
+          key: 'AIzaSyBo8Ws9ujugchMacJ3BNAvGWTn6b1cmtJ4',
+          language: 'ru'
+        }
+      })
+      .use(ZiggyVue, Ziggy)
+      .mount(el);
+  },
 });
 
 InertiaProgress.init({ color: '#4B5563' });
