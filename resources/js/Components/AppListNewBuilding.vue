@@ -12,19 +12,19 @@
 
   <div class="grid__list-new-build">
     <div
-      class="sticky top-[2vw] filter__left lg:absolute lg:z-40 lg:top-0 transition-all duration-500 w-full bg-[#F5F5F5] rounded-[6px] h-fit"
+      class="sticky top-[2vw] filter__left lg:absolute lg:z-40 lg:top-0 transition-all duration-500 w-full bg-[ #F5F5F5] rounded-[6px] h-fit"
       :class="{'animation__filter': openFilter}"
     >
       <div class="flex justify-between items-center p-7 xxl:p-5 xl:p-4">
         <span
           class="text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[16px] leading-none">{{ language.rielt_1[4] }}</span>
         <div class="flex items-center gap-4">
-          <button class="text-[#255ECC] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer"
+          <button class="text-[#6435A5] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer"
                   v-on:click="reloadFilter">
             {{ language.rielt_1[8] }}
           </button>
           <button @click="openFilter = false"
-                  class="hidden lg:block text-[#255ECC] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer">
+                  class="hidden lg:block text-[#6435A5] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px] leading-none cursor-pointer">
             Закрыть
           </button>
         </div>
@@ -71,7 +71,7 @@
                      :class="{ 'rotate-180': openSelectPlan }" alt="">
               </div>
               <div v-if="openSelectPlan"
-                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div class="flex items-center text-[#1E1D2D] ml-5 mt-2" v-for="(item, index) in selectPlan"
                      :key="idx">
                   <input class="custom__checkbox" name="infrastructure" type="checkbox"
@@ -96,10 +96,10 @@
                      :class="{ 'rotate-180': openSelectCity }" alt="">
               </div>
               <div v-if="openSelectCity"
-                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[215px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div class="relative w-full p-5 xxl:p-4 xl:p-3">
                   <input @click.stop="noDelete" v-model="searchValue"
-                         class="py-3 xxl:py-2.5 xl:py-2 pl-10 xxl:pl-8 xl:pl-6 focus:ring-[#255ECC] focus:border-[#255ECC] w-full text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] rounded-[6px] leading-none border border-solid border-[#E5DFEE]"
+                         class="py-3 xxl:py-2.5 xl:py-2 pl-10 xxl:pl-8 xl:pl-6 focus:ring-[#6435A5] focus:border-[#6435A5] w-full text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] rounded-[6px] leading-none border border-solid border-[#E5DFEE]"
                          type="text">
                   <img class="absolute top-1/2 -translate-y-1/2 translate-x-1/2 w-4.5 xxl:w-4 xl:w-3.5"
                        src="../../assets/svg/search_icon_grey.svg" alt="">
@@ -130,7 +130,7 @@
                      :class="{ 'rotate-180': openSelectRegion }" alt="">
               </div>
               <div v-if="openSelectRegion"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <div v-if="filters.areas.length > 0">
                   <p>
                     {{ language.ob[17] }}
@@ -172,14 +172,14 @@
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_from">{{
                   language.rielt_1[19] }}</label>
                 <input @click="changeBorder(1)" v-model="filters.price.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="cost_before">{{
                   language.rielt_1[20] }}</label>
                 <input @click="changeBorder(1)" v-model="filters.price.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="cost_before">
               </div>
             </div>
@@ -197,7 +197,7 @@
                      :class="{ 'rotate-180': openSelectDeadline }" alt="">
               </div>
               <div v-if="openSelectDeadline"
-                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[150px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <!--                <span-->
                 <!--                  v-for="(deadline, idx) in deadlines" :key="idx"-->
                 <!--                  @click="changeSelectDeadline(deadline)"-->
@@ -225,14 +225,14 @@
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="from">{{
                   language.rielt_1[19] }}</label>
                 <input @click="changeBorder(2)" v-model="filters.square.min"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="from">
               </div>
               <div class="flex items-center gap-1">
                 <label class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]" for="before">{{
                   language.rielt_1[20] }}</label>
                 <input @click="changeBorder(2)" v-model="filters.square.max"
-                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[#F5F5F5] border-transparent focus:ring-0"
+                       class="text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] border__bottom p-0 w-full bg-[ #F5F5F5] border-transparent focus:ring-0"
                        type="number" id="before">
               </div>
             </div>
@@ -253,7 +253,7 @@
               </div>
               <div
                    v-if="openSelectDev"
-                   class="max-h-[300px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[#F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
+                   class="max-h-[300px] overflow-y-auto custom__scroll absolute w-full z-40 bg-[ #F5F5F5] flex flex-col top-full left-0 w-full border border-solid border-[#E5DFEE] rounded-b-[6px] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
                 <span
                   v-for="(item, idx) in sortBilders()" :key="idx"
                   @click="changeSelectDev(item)"
@@ -278,7 +278,7 @@
                   language.rielt_1[26] }}
                   (м)</label>
                 <input @click="changeBorder(3)" v-model="filters.location.toSea"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_sea">
               </div>
               <div :class="{'border__purple': isBorder === 4 }"
@@ -286,7 +286,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_school">{{
                   language.rielt_1[30] }} (м)</label>
                 <input @click="changeBorder(4)" v-model="filters.location.toSchool"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_school">
               </div>
               <div :class="{'border__purple': isBorder === 5 }"
@@ -294,7 +294,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_shoping">{{
                   language.rielt_1[28] }} (м)</label>
                 <input @click="changeBorder(5)" v-model="filters.location.toShop"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_shoping">
               </div>
               <div :class="{'border__purple': isBorder === 6 }"
@@ -303,7 +303,7 @@
                   language.rielt_1[33] }}
                   (м)</label>
                 <input @click="changeBorder(6)" v-model="filters.location.toPark"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_park">
               </div>
               <div :class="{'border__purple': isBorder === 7 }"
@@ -311,7 +311,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_child">{{
                   language.rielt_1[29] }} (м)</label>
                 <input @click="changeBorder(7)" v-model="filters.location.toChildrenSchool"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_child">
               </div>
               <div :class="{'border__purple': isBorder === 8 }"
@@ -319,7 +319,7 @@
                 <label class="text-[#8A8996] text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]" for="for_stop">{{
                   language.rielt_1[34] }} (м)</label>
                 <input @click="changeBorder(8)" v-model="filters.location.toBus"
-                       class="bg-[#F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
+                       class="bg-[ #F5F5F5] text-[#1E1D2D] text-[17px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] p-0 leading-none border-transparent focus:border-transparent focus:ring-0"
                        type="number" id="for_stop">
               </div>
             </div>
@@ -363,11 +363,11 @@
     </div>
     <div class="w-full px-7 xxl:px-5 xl:px-4 lg:px-0">
       <div class="relative z-20">
-        <div class="hidden lg:flex bg-[#F5F5F5] rounded-[10px] justify-between items-center p-5 xxl:p-4 xl:p-3 mb-2">
+        <div class="hidden lg:flex bg-[ #F5F5F5] rounded-[10px] justify-between items-center p-5 xxl:p-4 xl:p-3 mb-2">
           <div
             class="flex items-center gap-5 xxl:gap-4 xl:gap-3 rounded-[5px] text-[#1E1D2D] text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[16px] leading-none font-semibold">
             <div @click="openFilter = true"
-                 class="relative flex flex-col justify-evenly py-0.5 items-center cursor-pointer h-6 w-6 rounded-[5px] bg-[#255ECC] ">
+                 class="relative flex flex-col justify-evenly py-0.5 items-center cursor-pointer h-6 w-6 rounded-[5px] bg-[#6435A5]">
               <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
               <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
               <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
@@ -376,7 +376,7 @@
           </div>
           <button
             @click="reloadFilter"
-            class="text-[#255ECC] text-[16px] xxl:text-[14px] xl:text-[12px] md:text-[14px] lg:text-[15px] cursor-pointer leading-none">
+            class="text-[#6435A5] text-[16px] xxl:text-[14px] xl:text-[12px] md:text-[14px] lg:text-[15px] cursor-pointer leading-none">
             {{ language.rielt_1[8] }}
           </button>
         </div>
@@ -417,13 +417,13 @@
             </div>
             <div class="flex items-center gap-8 xxl:gap-6 xl:gap-5">
               <button @click="map = !map"
-                      class="button__map text-[#255ECC] flex items-center gap-3 xxl:gap-2 xl:gap-1.5 px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2.5 xl:py-2 rounded-[6px]">
+                      class="button__map text-[#6435A5] flex items-center gap-3 xxl:gap-2 xl:gap-1.5 px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2.5 xl:py-2 rounded-[6px]">
                 <svg class="w-6 xxl:w-5 xl:w-4 h-6 xxl:h-5 xl:h-4 md:h-5" width="24" height="24" viewBox="0 0 24 24"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_134_1964)">
                     <path
                       d="M18.364 17.364L12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364ZM12 15C13.0609 15 14.0783 14.5786 14.8284 13.8285C15.5786 13.0783 16 12.0609 16 11C16 9.93918 15.5786 8.92176 14.8284 8.17162C14.0783 7.42147 13.0609 7.00004 12 7.00004C10.9391 7.00004 9.92172 7.42147 9.17158 8.17162C8.42143 8.92176 8 9.93918 8 11C8 12.0609 8.42143 13.0783 9.17158 13.8285C9.92172 14.5786 10.9391 15 12 15ZM12 13C11.4696 13 10.9609 12.7893 10.5858 12.4143C10.2107 12.0392 10 11.5305 10 11C10 10.4696 10.2107 9.9609 10.5858 9.58583C10.9609 9.21076 11.4696 9.00004 12 9.00004C12.5304 9.00004 13.0391 9.21076 13.4142 9.58583C13.7893 9.9609 14 10.4696 14 11C14 11.5305 13.7893 12.0392 13.4142 12.4143C13.0391 12.7893 12.5304 13 12 13Z"
-                      fill="#255ECC"/>
+                      fill="#6435A5"/>
                   </g>
                   <defs>
                     <clipPath id="clip0_134_1964">
@@ -471,7 +471,7 @@
                   class="uppercase bg-[#30CB49] text-white text-sm xxl:text-xs xl:text-[10px] md:text-[12px] leading-none font-semibold rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1 mr-2 cursor-default"
                   v-if="item.created && !Number.isInteger(+item.created[0])">{{ language.rielt_1[10] }}</span>
                   <span
-                    class="uppercase bg-[#255ECC] text-white text-sm xxl:text-xs xl:text-[10px] md:text-[12px] leading-none font-semibold rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1 cursor-default"
+                    class="uppercase bg-[#E84680] text-white text-sm xxl:text-xs xl:text-[10px] md:text-[12px] leading-none font-semibold rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1 cursor-default"
                     v-else-if="item.created">{{ item.created }}</span>
                 </div>
                 <div class="seek flex opacity-0 transition-all flex-col items-center gap-3 xxl:gap-2 xl:gap-1.5 w-full">
@@ -564,7 +564,7 @@
                     </div>
                     <div class="justify-self-end justify-end sm:justify-start flex h-fit flex-wrap gap-1">
                       <span
-                        class="bg-[#255ECC] self-start h-fit text-white text-[13px] xxl:text-[11px] xl:text-[9px] md:text-[11px] leading-none font-semibold rounded-[3px] px-2 xxl:px-1.5 xl:px-1 py-1.5 xxl:py-1 xl:py-1"
+                        class="bg-[#E84680] self-start h-fit text-white text-[13px] xxl:text-[11px] xl:text-[9px] md:text-[11px] leading-none font-semibold rounded-[3px] px-2 xxl:px-1.5 xl:px-1 py-1.5 xxl:py-1 xl:py-1"
                         v-if="Math.ceil(Math.abs(new Date().getTime() - new Date(item.created_at).getTime()) / (1000 * 3600 * 24) ) <= 30">{{ language.rielt_1[51] }}</span>
                       <span
                         class="bg-[#FA8D50] self-start h-fit text-white text-[13px] xxl:text-[11px] xl:text-[9px] leading-none font-semibold rounded-[3px] px-2 xxl:px-1.5 xl:px-1 py-1.5 xxl:py-1 xl:py-1"
@@ -585,7 +585,7 @@
                   class="uppercase border border-solid border-[#30CB49] h-fit text-[#30CB49] text-[14px] xxl:text-[12px] xl:text-[10px] md:text-[12px] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1"
                   v-if="item.created && !Number.isInteger(+item.created[0])">{{ language.rielt_1[10] }}</span>
                 <span
-                  class="uppercase border border-solid border-[#255ECC]  h-fit text-[#255ECC]  text-[14px] xxl:text-[12px] xl:text-[10px] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1"
+                  class="uppercase border border-solid border-[#E84680] h-fit text-[#E84680] text-[14px] xxl:text-[12px] xl:text-[10px] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 py-2 xxl:py-1.5 xl:py-1"
                   v-else-if="item.created">{{ item.created }}</span>
               </div>
               <div class="flex flex-col gap-2.5 xxl:gap-1.5 xl:gap-1">

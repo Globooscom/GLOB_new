@@ -13,7 +13,7 @@
           <span class="text-[#8A8996]">{{ new Date(Date.parse(item.created_at)).toISOString().replace(/^([^T]+)T(.+)$/,'$1').replace(/^(\d+)-(\d+)-(\d+)$/,'$3.$2.$1') }}</span>
           <p class="text-[22px] xxl:text-lg xl:text-base lg:text-[20px] font-semibold leading-none my-2">{{ item.title }}</p>
           <p v-html="item.description"></p>
-<!--          <button class="text-[#255ECC]">Читать далее</button>-->
+<!--          <button class="text-[#6435A5]">Читать далее</button>-->
         </div>
       </div>
     </div>

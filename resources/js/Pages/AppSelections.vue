@@ -45,12 +45,12 @@
               </div>
               <span class="text-[#8A8996] text-[14px] xxl:text-[12px] xl:text-[10px] lg:text-[14px] leading-none">{{
                 item.values.length }} {{ language.ob[35] }}</span>
-              <div :class="{ 'border-[#255ECC]': item.isEdit, 'border-[#E5DFEE]': !item.isEdit }"
+              <div :class="{ 'border-[#6435A5]': item.isEdit, 'border-[#E5DFEE]': !item.isEdit }"
                 class="hover__title-block transition-all flex w-full border border-solid rounded-[5px] p-3 xxl:p-2.5 xl:p-2">
                 <input :disabled="!item.isEdit"
                   class="p-0 text-[16px] xxl:text-[14px] xl:text-[12px] lg:text-[15px] w-full leading-none focus:ring-0"
                   v-model="item.description" type="text">
-                <button @click="editComment(item)" :class="{ 'text-[#255ECC]': item.isEdit }"
+                <button @click="editComment(item)" :class="{ 'text-[#6435A5]': item.isEdit }"
                   class="text-[14px] xxl:text-[12px] xl:text-[10px] lg:text-[14px] leading-none">{{ item.isEdit ?
                     language.dob_ob_1[24] : language.menu_zastr_1[9] }}</button>
               </div>
@@ -96,7 +96,7 @@
       </div>
     </div>
   </main>
-  
+  <app-footer :language="language" />
 </template>
 <script>
 import AppHeader from '../Layouts/AppHeader.vue'
@@ -245,7 +245,7 @@ h2 span{
   font-weight: 400;
   font-size: 13px;
   display:block;
-  background: #255ECC;
+  background: rgb(246 243 250);
     padding: 7px 8px;
     border-radius: 6px;
     display: block;
@@ -288,8 +288,8 @@ h2 span{
     top: -40px;
     width: 142px;
     padding: 7px 7px;
-    background: #255ECC;
-    color: white;
+    background: rgb(246 243 250);
+    color: rgb(100 53 165);
     border-radius: 5px;
     left: auto;
     font-size: 13px;

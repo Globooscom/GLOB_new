@@ -82,7 +82,7 @@
                   >{{ language.rielt_1[10] }}</span
                 >
                 <span
-                  class="flex items-center justify-center uppercase border border-solid border-[#255ECC]  h-fit text-[#255ECC]  leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
+                  class="flex items-center justify-center uppercase border border-solid border-[#E84680] h-fit text-[#E84680] leading-none font-medium rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-else-if="house.created"
                   >{{ house.created }}</span
                 >
@@ -92,7 +92,7 @@
                   >{{ language.rielt_1[52] }}</span
                 >
                 <span
-                  class="flex items-center justify-center text-white font-semibold bg-[#255ECC] leading-none rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
+                  class="flex items-center justify-center text-white font-semibold bg-[#E84680] leading-none rounded-[3px] px-3 xxl:px-2 xl:px-1.5 h-[25px] xxl:h-[20px] xl:h-[16px]"
                   v-if="
                     Math.ceil(
                       Math.abs(
@@ -158,7 +158,7 @@
               </div>
               <div
                 @click="map = !map"
-                class="button__map text-[#255ECC] flex items-center justify-center cursor-pointer bg-[#f5f5f5]   gap-2 xxl:gap-1.5 xl:gap-1 h-10 xxl:h-8 xl:h-6 lg:h-8 px-4 xxl:px-3 xl:px-2.5 rounded-[4px]"
+                class="button__map text-[#6435A5] flex items-center justify-center cursor-pointer bg-[#F6F3FA] gap-2 xxl:gap-1.5 xl:gap-1 h-10 xxl:h-8 xl:h-6 lg:h-8 px-4 xxl:px-3 xl:px-2.5 rounded-[4px]"
               >
                 <svg
                   width="24"
@@ -171,7 +171,7 @@
                   <g clip-path="url(#clip0_134_1964)">
                     <path
                       d="M18.364 17.364L12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364ZM12 15C13.0609 15 14.0783 14.5786 14.8284 13.8285C15.5786 13.0783 16 12.0609 16 11C16 9.93918 15.5786 8.92176 14.8284 8.17162C14.0783 7.42147 13.0609 7.00004 12 7.00004C10.9391 7.00004 9.92172 7.42147 9.17158 8.17162C8.42143 8.92176 8 9.93918 8 11C8 12.0609 8.42143 13.0783 9.17158 13.8285C9.92172 14.5786 10.9391 15 12 15ZM12 13C11.4696 13 10.9609 12.7893 10.5858 12.4143C10.2107 12.0392 10 11.5305 10 11C10 10.4696 10.2107 9.9609 10.5858 9.58583C10.9609 9.21076 11.4696 9.00004 12 9.00004C12.5304 9.00004 13.0391 9.21076 13.4142 9.58583C13.7893 9.9609 14 10.4696 14 11C14 11.5305 13.7893 12.0392 13.4142 12.4143C13.0391 12.7893 12.5304 13 12 13Z"
-                      fill="#255ECC"
+                      fill="#6435A5"
                     />
                   </g>
                   <defs>
@@ -195,7 +195,7 @@
             >
               <button
                 @click="openAddSelection = true"
-                class="relative plus__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#f5f5f5]   rounded-[3px]"
+                class="relative plus__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#F6F3FA] rounded-[3px]"
               >
                 <img
                   src="../../assets/svg/plus_icon_grey.svg"
@@ -211,7 +211,7 @@
               <button
                 v-if="!flagFavorite"
                 @click="addToFavorite"
-                class="relative heart__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#f5f5f5]   rounded-[3px]"
+                class="relative heart__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#F6F3FA] rounded-[3px]"
               >
                 <img
                   src="../../assets/svg/heart_icon_grey.svg"
@@ -227,7 +227,7 @@
               <button
                 v-if="flagFavorite"
                 @click="removeToFavorite"
-                class="relative heart__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#f5f5f5]   rounded-[3px]"
+                class="relative heart__hover flex items-center justify-center h-10 xxl:h-8 xl:h-6 lg:h-8 w-10 xxl:w-8 xl:w-6 lg:w-8 bg-[#F6F3FA] rounded-[3px]"
               >
                 <img
                   src="../../assets/svg/heart_icon_pink.svg"
@@ -246,7 +246,7 @@
                 @click="addClient = true"
               >
                 <button
-                  class="login__btn--bg bg-[#255ECC] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none"
+                  class="login__btn--bg bg-[#E84680] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none"
                 >
                   {{ language.btn_send[0] }}
                 </button>
@@ -259,7 +259,7 @@
               v-if="house.flats.length > 0"
             >
               <button
-                class="login__btn--bg bg-[#255ECC] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none"
+                class="login__btn--bg bg-[#E84680] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none"
               >
                 {{ language.shahm[0] }}
               </button>
@@ -424,7 +424,7 @@
               v-if="house.description.length > 300"
             >
               <span
-                class="text-[#255ECC] font-medium text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]"
+                class="text-[#6435A5] font-medium text-sm xxl:text-xs xl:text-[10px] lg:text-[14px]"
                 >{{
                   fullDescription
                     ? language.menu_zastr_1[11]
@@ -447,7 +447,7 @@
               class="flex flex-wrap gap-3 xxl:gap-2.5 xl:gap-2m pt-4 xxl:pt-3 xl:pt-2.5"
             >
               <span
-                class="infrostruct__banner text-[#255ECC]  rounded-[12px] xl:rounded-[8px] leading-none px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2 xl:py-1.5"
+                class="infrostruct__banner text-[#E84680] rounded-[12px] xl:rounded-[8px] leading-none px-5 xxl:px-4 xl:px-3 py-3 xxl:py-2 xl:py-1.5"
                 v-for="item in arrayInfos"
                 >{{
                   selectLanguage === 0
@@ -499,7 +499,7 @@
                   </div>
                   <div
                     v-else
-                    class="bg-[#255ECC] h-5 w-5 xxl:h-4 xxl:w-4 xl:h-3 xl:w-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center"
+                    class="bg-[#E84680] h-5 w-5 xxl:h-4 xxl:w-4 xl:h-3 xl:w-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center"
                   >
                     <img
                       src="../../assets/svg/exit_icon_white.svg"
@@ -617,7 +617,7 @@
       />
     </div>
   </main>
-  
+  <app-footer :language="language" />
 </template>
 
 <script>
@@ -920,8 +920,8 @@ export default {
   cursor: pointer;
   transition: 0.3s;
   background-color: white;
-  color: #255ECC;
-  border: 1px solid #255ECC;
+  color: #e84680;
+  border: 1px solid #e84680;
   line-height: 1.1;
 }
 
@@ -949,8 +949,8 @@ export default {
   width: 220px;
   right: -260px;
   padding: 5px;
-  background: #255ECC;
-  color: white;
+  background: rgb(246 243 250);
+  color: rgb(100 53 165);
   border-radius: 5px;
   left: auto;
   font-size: 10px;
@@ -962,7 +962,7 @@ export default {
 
 .send_client button:hover {
   color: white;
-  background-color: #255ECC;
+  background-color: #e84680;
 }
 
 
@@ -978,8 +978,8 @@ export default {
     top: 24px;
     right: -42px;
     padding: 8px;
-    background: #255ECC;
-    color: white;
+    background: rgb(246 243 250);
+    color: rgb(100 53 165);
     border-radius: 5px;
     left: auto;
     font-size: 12px;

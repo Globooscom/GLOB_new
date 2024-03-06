@@ -8,7 +8,7 @@
   <div class="chat__userlist lg:absolute lg:-left-full transition-all duration-500 lg:z-40 h-[85vh] lg:w-[50vw] md:w-[87.5vw] overflow-y-auto border border-solid border-[#E5DFEE] bg-white">
     <div class="p-4 xxl:p-3 xl:p-2.5">
       <div class="relative">
-        <input v-model="searchName" class="bg-[#F7F7F9] focus:ring-[#255ECC] w-full pl-8 xxl:pl-7 xl:pl-6 py-2.5 xl:py-2 text-sm xxl:text-xs xl:text-[10px] rounded-[6px]" :placeholder="language.ob[47] + '...'" type="text">
+        <input v-model="searchName" class="bg-[#F7F7F9] focus:ring-[#6435A5] w-full pl-8 xxl:pl-7 xl:pl-6 py-2.5 xl:py-2 text-sm xxl:text-xs xl:text-[10px] rounded-[6px]" :placeholder="language.ob[47] + '...'" type="text">
         <img src="../../assets/svg/search_icon_grey.svg" class="absolute top-1/2 left-0 translate-x-1/2 -translate-y-1/2 w-4.5 xxl:w-4 xl:w-3.5" alt="">
       </div>
     </div>
@@ -29,8 +29,8 @@
               + (chat.from.last_name === null ? '' : chat.from.last_name)
               }}
             </span>
-                <span v-bind:class="{ 'bg-[#255ECC] ': chat.from.role === 1 , 'bg-[#E87746]': chat.from.role === 0, 'bg-[#E84680]': chat.from.role > 1 }" class="text-white text-[10px] xxl:text-[9px] xl:text-[8px] font-medium leading-none rounded-[3px] px-1.5 py-1 xl:px-1 py-0.5" v-if="chat.from.id !== user.id">{{ getType(chat) }}</span>
-                <span v-bind:class="{ 'bg-[#255ECC] ': chat.to.role === 1 , 'bg-[#E87746]': chat.to.role === 0, 'bg-[#E84680]': chat.to.role > 1 }" class="text-white text-[10px] xxl:text-[9px] xl:text-[8px] font-medium leading-none rounded-[3px] px-1.5 py-1 xl:px-1 py-0.5" v-if="chat.to.id !== user.id">{{ getType(chat) }}</span>
+                <span v-bind:class="{ 'bg-[#6435A5]': chat.from.role === 1 , 'bg-[#E87746]': chat.from.role === 0, 'bg-[#E84680]': chat.from.role > 1 }" class="text-white text-[10px] xxl:text-[9px] xl:text-[8px] font-medium leading-none rounded-[3px] px-1.5 py-1 xl:px-1 py-0.5" v-if="chat.from.id !== user.id">{{ getType(chat) }}</span>
+                <span v-bind:class="{ 'bg-[#6435A5]': chat.to.role === 1 , 'bg-[#E87746]': chat.to.role === 0, 'bg-[#E84680]': chat.to.role > 1 }" class="text-white text-[10px] xxl:text-[9px] xl:text-[8px] font-medium leading-none rounded-[3px] px-1.5 py-1 xl:px-1 py-0.5" v-if="chat.to.id !== user.id">{{ getType(chat) }}</span>
               </div>
               <div class="flex gap-1">
                 <!--            <img src="../../assets/svg/chat_check_message.svg" class="w-5 xxl:w-4 xl:w-3.5" alt="">-->
@@ -39,7 +39,7 @@
             </div>
             <div class="flex justify-between items-center text-sm xxl:text-xs xl:text-[10px]">
               <span class="text-[#8A8996] leading-none" v-if="chat.message !== null">{{ chat.message.message.length > 30 ? chat.message.message.slice(0, 30) + '...' : chat.message.message }}</span>
-              <span class="bg-[#255ECC]  text-white rounded-[100px] leading-none px-1.5 xl:px-1 py-0.5" v-if="chat.visible_id === user.id">{{  }}</span>
+              <span class="bg-[#6435A5] text-white rounded-[100px] leading-none px-1.5 xl:px-1 py-0.5" v-if="chat.visible_id === user.id">{{  }}</span>
             </div>
           </div>
         </div>

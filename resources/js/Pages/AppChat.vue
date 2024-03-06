@@ -11,10 +11,10 @@
     @selectLanguage="choseLanguage"
     :language="language"
   />
-  <main class="bg-[#f5f5f5]  ">
+  <main class="bg-[#F6F3FA]">
     <div class="_container">
       <div @click="openContactList = !openContactList"
-           class="hidden lg:flex flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#255ECC]  mt-3">
+           class="hidden lg:flex flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#6435A5] mt-3">
         <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
         <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
         <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>

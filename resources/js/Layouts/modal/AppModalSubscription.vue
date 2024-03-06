@@ -18,7 +18,7 @@
 
           <button
             @click="sendTrial"
-            class="hover__button--purple transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
+            class="hover__button--purple transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
             {{ language.subscription[73] }}
           </button>
         </div>
@@ -29,7 +29,7 @@
 
           <button
             @click="$emit('close-modal-verification')"
-            class="hover__button--purple transition-all bg-[#255ECC]  text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
+            class="hover__button--purple transition-all bg-[#6435A5] text-[15px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] py-4 xxl:py-3 xl:py-2.5  leading-none text-white m-5 xxl:m-4 xl:m-3 rounded-[5px]">
             {{ language.subscription[20] }}
           </button>
         </div>

@@ -1,12 +1,11 @@
 <script setup>
-import { Link } from '@inertiajs/inertia-vue3'
 import ChangeLanguage from "@/Components/ChangeLanguage.vue";
 </script>
 
 <template>
   <div v-if="overlaySelect" @click="closeOverlaySelect" class="absolute h-full w-full z-40"></div>
   <!--  Меню до входа-->
-  <header v-if="user_info === null" class="relative bg-[#255ECC]  leading-[100%]">
+  <header v-if="user_info === null" class="relative bg-[#255ECC] leading-[100%]">
     <div class="_container h-[60px] xxl:h-12 xl:h-10 sm:px-1">
       <div class="flex items-center justify-between h-full ">
         <Link href="/" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
@@ -39,7 +38,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
   </header>
 
   <!-- Меню агента -->
-  <header v-if="user_info !== null && user_info.role === 0" class="relative bg-[#255ECC]  leading-[100%]">
+  <header v-if="user_info !== null && user_info.role === 0" class="relative bg-[#255ECC] leading-[100%]">
 
     <app-burger-agent :openClient="openClient" :tabindex="tabindex" @blur="openBurgerAgent = false" :class="{ 'left__0': openBurgerAgent }"
       :user="user" :language="language" @target-with-client="targetWithClient" @logout="logout" />
@@ -48,7 +47,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
       <div class="flex items-center justify-between h-full ">
         <div class="flex gap-20 xxl:gap-16 xl:gap-12 lg:gap-2 sm:gap-1.5 items-baseline lg:items-center">
           <div @click="openBurgerAgent = !openBurgerAgent"
-            class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#255ECC] ">
+            class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#255ECC]">
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
@@ -76,7 +75,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
         <div class="flex items-center gap-5 xxl:gap-4 xl:gap-3 text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[15px]">
           <div class="relative hover__search">
             <input @keydown.enter="startSearch" v-model="search"
-              class="text-white focus:ring-white pr-14 xxl:pr-10 xl:pr-8 lg:pr-6 pl-4 xxl:pl-3 xl:pl-2.5 lg:pl-1.5 text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[15px] leading-none bg-[#255ECC]  h-12 xxl:h-10 xl:h-8 w-[380px] exl:w-[18vw] lg:w-[160px] sm:w-[100px] rounded-[5px]"
+              class="text-white focus:ring-white pr-14 xxl:pr-10 xl:pr-8 lg:pr-6 pl-4 xxl:pl-3 xl:pl-2.5 lg:pl-1.5 text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[15px] leading-none bg-[#255ECC] h-12 xxl:h-10 xl:h-8 w-[380px] exl:w-[18vw] lg:w-[160px] sm:w-[100px] rounded-[5px]"
               type="text">
             <img @click="startSearch" src="../../assets/svg/search_icon.svg"
               class="cursor-pointer absolute top-1/2 -translate-y-1/2 right-3 exl:right-[1vw] h-6 xxl:h-5 xl:h-4"
@@ -89,7 +88,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
               <div class="relative">
                 <img src="../../assets/svg/chat_icon.svg" class="h-6 xxl:h-5 xl:h-4 lg:h-5" alt="Чат">
                 <div v-if="isChat === true"
-                  class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#255ECC] h-3.5 xxl:h-3 xl:h-2.5 lg:h-3.5 w-3.5 xxl:w-3 xl:w-2.5 lg:w-3.5">
+                  class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#E84680] h-3.5 xxl:h-3 xl:h-2.5 lg:h-3.5 w-3.5 xxl:w-3 xl:w-2.5 lg:w-3.5">
                   <span class="text-white text-[12px] xxl:text-[10px] xl:text-[8px]">{{ chats }}</span>
                 </div>
               </div>
@@ -125,7 +124,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                   class="hover__select border__bottom--not whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{
                     language.prof_zastr[0] }}</Link>
                 <div @click="logout"
-                  class="hover:bg-[#f5f5f5]   border__bottom--not text-[#255ECC]  whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
+                  class="hover:bg-[#F6F3FA] border__bottom--not text-[#E84680] whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
                   {{ language.menu_zastr_1[2] }}</div>
               </div>
             </div>
@@ -138,7 +137,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
   <!-- Меню Застройщик-->
   <!--  v-if="user.role === 1" -->
   <header v-if="user_info !== null && user_info.role === 1"
-    class="relative bg-[#255ECC]  leading-[100%]">
+    class="relative bg-[#255ECC] leading-[100%]">
 
     <app-burger-dev :user="user_info" :language="language" :class="{ 'left__0': openBurgerDev }" @logout="logout"
       @target-with-client="targetWithClient" />
@@ -147,7 +146,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
       <div class="flex items-center justify-between h-full ">
         <div class="flex gap-20 xxl:gap-16 xl:gap-12 lg:gap-2 items-baseline lg:items-center">
           <div @click="openBurgerDev = !openBurgerDev"
-            class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-6 w-6 rounded-[5px] bg-[#255ECC] ">
+            class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-6 w-6 rounded-[5px] bg-[#255ECC]">
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
@@ -170,7 +169,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
             <div class="relative">
               <img src="../../assets/svg/chat_icon.svg" class="h-6 xxl:h-5 xl:h-4" alt="Чат">
               <div v-if="isChat === true"
-                class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#255ECC] h-3.5 xxl:h-3 xl:h-2.5 w-3.5 xxl:w-3 xl:w-2.5">
+                class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#E84680] h-3.5 xxl:h-3 xl:h-2.5 w-3.5 xxl:w-3 xl:w-2.5">
                 <span class="text-white text-[12px] xxl:text-[10px] xl:text-[8px]">{{ chats }}</span>
               </div>
             </div>
@@ -194,7 +193,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                   class="hover__select border__bottom--not whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{
                     language.prof_zastr[0] }}</Link>
                 <div @click="logout"
-                  class="hover:bg-[#f5f5f5]   border__bottom--not text-[#255ECC]  whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
+                  class="hover:bg-[#F6F3FA] border__bottom--not text-[#E84680] whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
                   {{ language.menu_zastr_1[2] }}</div>
               </div>
             </div>
@@ -205,7 +204,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
   </header>
 
   <!-- Меню Админа и модератора -->
-  <header v-if="user_info !== null && user_info.role === 2 || user_info !== null && user_info.role === 3" class="relative bg-[#255ECC]  leading-[100%]">
+  <header v-if="user_info !== null && user_info.role === 2 || user_info !== null && user_info.role === 3" class="relative bg-[#255ECC] leading-[100%]">
 
     <app-burger-agent :openClient="true" :tabindex="tabindex" @blur="openBurgerAgent = false" :class="{ 'left__0': openBurgerAgent }"
                       :user="user_info" :language="language" @target-with-client="targetWithClient" @logout="logout" />
@@ -214,7 +213,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
       <div class="flex items-center justify-between h-full ">
         <div class="flex gap-20 xxl:gap-16 xl:gap-12 lg:gap-2 sm:gap-1.5 items-baseline lg:items-center">
           <div @click="openBurgerAgent = !openBurgerAgent"
-               class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#255ECC] ">
+               class="hidden lg:flex relative flex-col justify-evenly py-0.5 items-center cursor-pointer h-8 w-8 rounded-[5px] bg-[#255ECC]">
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
             <span class="bg-white h-[1px] w-[60%] rounded-[2px]"></span>
@@ -243,7 +242,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
         <div class="flex items-center gap-5 xxl:gap-4 xl:gap-3 text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[15px]">
           <div class="relative hover__search">
             <input @keydown.enter="startSearch" v-model="search"
-                   class="text-white focus:ring-white pr-14 xxl:pr-10 xl:pr-8 lg:pr-6 pl-4 xxl:pl-3 xl:pl-2.5 lg:pl-1.5 text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[15px] leading-none bg-[#255ECC]  h-12 xxl:h-10 xl:h-8 w-[380px] exl:w-[12vw] lg:w-[160px] sm:w-[100px] rounded-[5px]"
+                   class="text-white focus:ring-white pr-14 xxl:pr-10 xl:pr-8 lg:pr-6 pl-4 xxl:pl-3 xl:pl-2.5 lg:pl-1.5 text-[18px] xxl:text-[15px] xl:text-[13px] lg:text-[15px] leading-none bg-[#255ECC] h-12 xxl:h-10 xl:h-8 w-[380px] exl:w-[12vw] lg:w-[160px] sm:w-[100px] rounded-[5px]"
                    type="text">
             <img @click="startSearch" src="../../assets/svg/search_icon.svg"
                  class="cursor-pointer absolute top-1/2 -translate-y-1/2 right-3 exl:right-[1vw] h-6 xxl:h-5 xl:h-4"
@@ -256,7 +255,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                 <div class="relative">
                   <img src="../../assets/svg/chat_icon.svg" class="h-6 xxl:h-5 xl:h-4 lg:h-5" alt="Чат">
                   <div v-if="isChat === true"
-                       class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#255ECC] h-3.5 xxl:h-3 xl:h-2.5 lg:h-3.5 w-3.5 xxl:w-3 xl:w-2.5 lg:w-3.5">
+                       class="absolute flex items-center justify-center -top-[30%] -right-[50%] rounded-full bg-[#E84680] h-3.5 xxl:h-3 xl:h-2.5 lg:h-3.5 w-3.5 xxl:w-3 xl:w-2.5 lg:w-3.5">
                     <span class="text-white text-[12px] xxl:text-[10px] xl:text-[8px]">{{ chats }}</span>
                   </div>
                 </div>
@@ -290,7 +289,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                       class="hover__select border__bottom--not whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{
                   language.prof_zastr[0] }}</Link>
                 <div @click="logout"
-                     class="hover:bg-[#f5f5f5]   border__bottom--not text-[#255ECC]  whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
+                     class="hover:bg-[#F6F3FA] border__bottom--not text-[#E84680] whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">
                   {{ language.menu_zastr_1[2] }}</div>
               </div>
             </div>
@@ -304,10 +303,9 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
 <script>
 import AppBurgerAgent from "@/Layouts/AppBurgerAgent.vue"
 import AppBurgerDev from "@/Layouts/AppBurgerDev.vue"
-import { useForm } from '@inertiajs/inertia-vue3'
 import { router } from '@inertiajs/vue3'
 import { computed } from 'vue'
-import { usePage } from '@inertiajs/inertia-vue3'
+import { usePage, useForm, Link } from '@inertiajs/inertia-vue3'
 
 export default {
   props: {
@@ -458,6 +456,7 @@ export default {
   components: {
     AppBurgerAgent,
     AppBurgerDev,
+    Link
   }
 }
 </script>

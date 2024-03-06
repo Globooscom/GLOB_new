@@ -4,7 +4,7 @@ import { Link } from '@inertiajs/inertia-vue3'
 
 <template>
   <div class="absolute top-full -left-full transition-all duration-300 z-[80]">
-    <div class="border__top-white bg-[#255ECC]  py-6 h-[100vh] text-white text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[16px] flex flex-col gap-6 px-[6.25vw]">
+    <div class="border__top-white bg-[#6435A5] py-6 h-[100vh] text-white text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[16px] flex flex-col gap-6 px-[6.25vw]">
       <div class="relative text-[#3B3A45] flex items-center gap-3.5 xxl:gap-3 xl:gap-2.5">
         <button @click="openProfileMenu = !openProfileMenu" class="flex items-center gap-2.5 xxl:gap-2 xl:gap-1.5">
           <span class="text-white text-lg xxl:text-sm xl:text-xs lg:text-[16px] leading-none whitespace-nowrap">{{ user.first_name + ' ' + user.last_name }}</span>
@@ -24,7 +24,7 @@ import { Link } from '@inertiajs/inertia-vue3'
             </label>
           </div>
           <Link href="/profile" class="hover__select border__bottom--not whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{ language.prof_zastr[0] }}</Link>
-          <div @click="$emit('logout')" class="hover:bg-[#f5f5f5]   border__bottom--not text-[#255ECC]  whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{ language.menu_zastr_1[2] }}</div>
+          <div @click="$emit('logout')" class="hover:bg-[#F6F3FA] border__bottom--not text-[#E84680] whitespace-nowrap cursor-pointer p-4 xxl:p-3 xl:p-2.5">{{ language.menu_zastr_1[2] }}</div>
         </div>
       </div>
       <Link href="/houses" :class="{ 'opacity-60': $page.url !== '/houses' }" class="whitespace-nowrap leading-none">{{ language.rielt_1[0] }}</Link>

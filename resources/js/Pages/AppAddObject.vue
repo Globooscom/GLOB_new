@@ -25,7 +25,7 @@ import { Link } from '@inertiajs/inertia-vue3'
         class="grid__add-object my-14 xxl:my-10 xl:my-8 gap-7 xxl:gap-5 xl:gap-4">
         <div class="relative">
           <div class="sticky lg:relative top-10 lg:top-0 z-50 lg:w-full">
-            <div class="bg-[#f5f5f5]   h-fit p-7 xxl:p-5 xl:p-4 rounded-[6px]">
+            <div class="bg-[#F6F3FA] h-fit p-7 xxl:p-5 xl:p-4 rounded-[6px]">
               <div class="flex flex-col gap-3 xxl:gap-2.5 xl:gap-2">
                 <Link :href="url">
                 <div :class="{ 'menu-add-obj': page === 0 }"
@@ -49,12 +49,12 @@ import { Link } from '@inertiajs/inertia-vue3'
             <div :class="{ 'hidden': page !== 1 }" class="flex justify-center mt-12 xxl:mt-10 xl:mt-8"
               v-if="readyHouse !== undefined && readyHouse.frames.length > 0">
               <button @click="addFlatModal"
-                class="register__button--white text-[#255ECC] flex justify-center items-center gap-2 xl:gap-1.5 border border-solid rounded-[5px] border-[#255ECC] px-4 xxl:px-3 xl:px-2.5 py-2.5 xxl:py-2 xl:py-1.5">
+                class="register__button--white text-[#6435A5] flex justify-center items-center gap-2 xl:gap-1.5 border border-solid rounded-[5px] border-[#6435A5] px-4 xxl:px-3 xl:px-2.5 py-2.5 xxl:py-2 xl:py-1.5">
                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_519_1862)">
                     <path
                       d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z"
-                      fill="#255ECC" />
+                      fill="#6435A5" />
                   </g>
                   <defs>
                     <clipPath id="clip0_519_1862">
@@ -101,7 +101,7 @@ import { Link } from '@inertiajs/inertia-vue3'
     </div>
 
   </main>
-  
+  <app-footer :language="language" />
 </template>
 
 <script>
@@ -411,7 +411,7 @@ export default {
     height: 11.4vw;
     border-radius: 50%;
     border: .8vw solid;
-    border-color: #255ECC transparent;
+    border-color: #6435A5 transparent;
  }
 
  @keyframes rotation {
@@ -439,7 +439,7 @@ export default {
     width: 41.4vw;
     height: 41.4vw;
     border: 2vw solid;
-    border-color: #255ECC transparent;
+    border-color: #6435A5 transparent;
    }
    .preloader h3  {
       font-size: 5vw;

@@ -43,7 +43,7 @@
                 <div class="lg:hidden h-[30px] w-[2px] xl:w-[1px] rounded-[3px] bg-[#784FB0]"></div>
                 <p class="lg:text-center w-full text-sm xxl:text-xs xl:text-[10px] lg:text-[12px] text-[#8A8996]" v-html="language.main[2]"></p>
               </div>
-              <button @click="openRegister = true" class="lg:self-center register__button--white w-fit border border-solid border-[#255ECC] leading-none rounded-[3px] text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] text-[#255ECC] px-5 xxl:px-4 xl:px-3 py-2.5 xxl:py-2 xl:py-1.5">{{ language.main[20] }}</button>
+              <button @click="openRegister = true" class="lg:self-center register__button--white w-fit border border-solid border-[#6435A5] leading-none rounded-[3px] text-[16px] xxl:text-[13px] xl:text-[11px] lg:text-[14px] text-[#6435A5] px-5 xxl:px-4 xl:px-3 py-2.5 xxl:py-2 xl:py-1.5">{{ language.main[20] }}</button>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@
       <div class="_container">
         <div class="_container--inter">
           <div class="flex items-center justify-center ">
-            <button @click="openRegister = true" class="hover__button--purple transition-all text-white bg-[#255ECC]  text-base xxl:text-sm xl:text-xs lg:text-[14px] leading-none rounded-[3px] px-6 xxl:px-5 xl:px-4 py-3 xxl:py-2 xl:py-1.5 my-7 xxl:my-5 xl:my-4">
+            <button @click="openRegister = true" class="hover__button--purple transition-all text-white bg-[#6435A5] text-base xxl:text-sm xl:text-xs lg:text-[14px] leading-none rounded-[3px] px-6 xxl:px-5 xl:px-4 py-3 xxl:py-2 xl:py-1.5 my-7 xxl:my-5 xl:my-4">
               {{ language.main[17] }}</button>
           </div>
         </div>

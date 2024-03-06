@@ -8,7 +8,7 @@
   >
     <div class="flex flex-col gap-3 xxl:gap-2.5 xl:gap-2">
       <img src="../../assets/svg/upload_photo.svg" class="h-7 xxl:h-6 xl:h-4" alt="">
-      <span class="text-[#255ECC]">Загрузить фото</span>
+      <span class="text-[#6435A5]">Загрузить фото</span>
     </div>
   </n-upload>
 </template>

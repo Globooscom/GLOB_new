@@ -53,7 +53,7 @@
       </div>
     </div>
   </main>
-  
+  <app-footer :language="language" />
 </template>
 
 <script>

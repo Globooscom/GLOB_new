@@ -22,7 +22,7 @@ import { Link } from '@inertiajs/inertia-vue3'
           <div class="flex lg:flex-col lg:items-center h-20 xxl:h-16 xl:h-12 lg:h-fit">
             <div class="flex items-center p-4 xxl:p-3 xl:p-2">
               <button @click="openSelection(null), tool = 1"
-                class="login__btn--bg bg-[#255ECC] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none">
+                class="login__btn--bg bg-[#E84680] px-4 xxl:px-4 xl:px-2.5 rounded-[3px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[13px] xl:text-[11px] lg:text-[15px] leading-none">
                 {{ language.subscription[41] }}
               </button>
             </div>
@@ -146,7 +146,7 @@ import { Link } from '@inertiajs/inertia-vue3'
             <li>{{ language.subscription[31] }}</li>
           </ul>
 
-          <button @click="cooperation_modal=!cooperation_modal" class="login__btn--bg bg-[#255ECC] px-4 xxl:px-4 xl:px-2.5 rounded-[5px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[11px] xl:text-[9px] lg:text-[12px] leading-none">{{ language.subscription[32] }}</button>
+          <button @click="cooperation_modal=!cooperation_modal" class="login__btn--bg bg-[#E84680] px-4 xxl:px-4 xl:px-2.5 rounded-[5px] h-10 xxl:h-8 xl:h-6 font-semibold text-white text-base xxl:text-[11px] xl:text-[9px] lg:text-[12px] leading-none">{{ language.subscription[32] }}</button>
 
         </div>
       </div>
@@ -358,7 +358,7 @@ export default {
 }
 
 .more-min{
-  color:#255ECC;
+  color: rgb(101 54 165);
   font-size: 14px;
   margin-bottom: 10px;
   text-decoration: none;
@@ -402,7 +402,7 @@ h2 {
 }
 
 .columns-clients .clients-menager {
-   background-color: #f5f5f5;
+  background: rgb(246 243 250);
   border-radius: 10px;
   width: 360px;
   padding: 1.75rem;
@@ -427,12 +427,12 @@ h2 {
 }
 
 .columns-clients .clients-menager ul li a {
-  color:#255ECC;
+  color: rgb(101 54 165);
   float: right;
 }
 
 .columns-clients .clients-menager ul li span {
-  color:#255ECC;
+  color: rgb(101 54 165);
   float: right;
 }
 
@@ -446,7 +446,7 @@ h2 {
 }
 
 .client-status {
-  background-color: #f5f5f5;
+  background-color: rgb(246 243 250);
   position: relative;
   padding: 8px 15px;
   left: -15px;
@@ -469,11 +469,11 @@ h2 {
 }
 
 .dropdown-toggle:hover {
-  border: 1px solid #255ECC;
+  border: 1px solid rgb(101 54 165);
 }
 
 .decided {
-  color:#255ECC;
+  color: rgb(101 54 165);
 }
 
 .dropdown-menu {
@@ -494,11 +494,11 @@ h2 {
 
 .dropdown-menu li:hover {
   background-color: #f1f1f1;
-  color:#255ECC;
+  color: rgb(101 54 165);
 }
 
 .check.active {
-  background-color: #255ECC;
+  background-color: #6435A5;
 }
 
 .check {
@@ -506,7 +506,7 @@ h2 {
   width: 19px;
   height: 19px;
   display: inline-block;
-  border: 1px solid #255ECC;
+  border: 1px solid #6435A5;
   margin-left: 10px;
   border-radius: 6px;
   position: relative;
@@ -515,7 +515,7 @@ h2 {
 }
 
 .purple-hints{
-  background-color: #f5f5f5;
+  background: rgb(246 243 250);
   border-radius: 10px;
   padding: 1.75rem;
 }

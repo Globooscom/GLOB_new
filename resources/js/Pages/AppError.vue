@@ -19,7 +19,7 @@ import { Link } from '@inertiajs/inertia-vue3'
       </div>
     </div>
   </main>
-  
+  <app-footer :language="language" />
 </template>
 
 <script>

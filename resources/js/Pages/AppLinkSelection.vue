@@ -7,7 +7,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
   <app-modal-notification class="left-[2vw] transition-all duration-1000" :class="{ '-left__full': !openNotification }"
     @close-notification="openNotification = false" />
   <header class="relative">
-    <div class="bg-[#255ECC]  h-[60px] xxl:h-12 xl:h-10 lg:h-12">
+    <div class="bg-[#6435A5] h-[60px] xxl:h-12 xl:h-10 lg:h-12">
       <div class="_container h-full text-[16px] xxl:text-[13px] xl:text-[11px]">
         <div class="flex items-center justify-between h-full">
           <Link href="/houses" class="flex items-center gap-3 xxl:gap-2 xl:gap-1.5">
@@ -70,7 +70,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                         class="bg-[#30CB49] uppercase self-end text-white leading-none px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 m-4 xxl:m-3 xl:m-2.5 rounded-[3px]"
                         v-if="item.created && !Number.isInteger(+item.created[0])">{{ item.created }}</span>
                       <span
-                        class="bg-[#255ECC] uppercase self-end text-white leading-none px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 m-4 xxl:m-3 xl:m-2.5 rounded-[3px]"
+                        class="bg-[#E84680] uppercase self-end text-white leading-none px-2 xxl:px-1.5 xl:px-1 py-1.5 xl:py-1 m-4 xxl:m-3 xl:m-2.5 rounded-[3px]"
                         v-else-if="item.created">{{ item.created }}</span>
                       <div class="flex items-center text-white gap-2 xxl:gap-1.5 xl:gap-1 p-5 xxl:p-4 xl:p-3">
                         <span class="leading-none">{{ item.area }}</span>
@@ -109,7 +109,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
               <span class="leading-none">{{ compilation.user.link }}</span>
             </div>
             <div class="flex flex-col gap-4 xxl:gap-3 xl:gap-2.5 mb-5">
-              <div class="flex cursor-pointer bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px] ">
+              <div class="flex cursor-pointer bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px] ">
                 <img src="../../assets/svg/chat_tel_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5 lg:w-[4.5]" alt=""
                   v-if="compilation.user.phone">
                 <span
@@ -117,7 +117,7 @@ import ChangeLanguage from "@/Components/ChangeLanguage.vue";
                     compilation.user.phone }}</span>
               </div>
 
-              <div class="flex cursor-pointer bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px] "
+              <div class="flex cursor-pointer bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px] "
                 v-if="compilation.user.email">
                 <img src="../../assets/svg/chat_mail_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5 lg:w-[4.5]" alt="">
                 <span

@@ -157,13 +157,13 @@ import { Link } from '@inertiajs/inertia-vue3'
       </div>
     </div>
   </main>
-  
+
 </template>
 
 <script>
-import AppHeader from '../Layouts/AppHeader.vue'
-import AppFooter from "../Layouts/AppFooter.vue"
-import AppSubmit from "../Layouts/modal/AppSubmitSelection.vue"
+import AppHeader from '@/Layouts/AppHeader.vue'
+import AppFooter from "@/Layouts/AppFooter.vue"
+import AppSubmit from "@/Layouts/modal/AppSubmitSelection.vue"
 
 export default {
   props: {

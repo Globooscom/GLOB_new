@@ -5,12 +5,12 @@
     <div class="relative my-3 xxl:my-2.5 xl:my-2">
       <input multiple @change="changeInputFile" type="file" ref="documents" id="input_file" class="opacity-0 absolute invisible">
       <label
-          class="register__button--white w-fit text-[#255ECC] flex items-center cursor-pointer gap-2 xl:gap-1.5 border border-solid border-[#255ECC] rounded-[6px] px-4 xxl:px-3 xl:px-2.5 py-3 xxl:py-2.5 xl:py-2"
+          class="register__button--white w-fit text-[#6435A5] flex items-center cursor-pointer gap-2 xl:gap-1.5 border border-solid border-[#6435A5] rounded-[6px] px-4 xxl:px-3 xl:px-2.5 py-3 xxl:py-2.5 xl:py-2"
           for="input_file"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_519_1862)">
-            <path d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z" fill="#255ECC"/>
+            <path d="M7.33398 7.33301V3.33301H8.66732V7.33301H12.6673V8.66634H8.66732V12.6663H7.33398V8.66634H3.33398V7.33301H7.33398Z" fill="#6435A5"/>
           </g>
           <defs>
             <clipPath id="clip0_519_1862">

@@ -53,7 +53,7 @@
               </div>
             </div>
            <div v-if="JK.openInput" class="relative"> 
-             <input class="w-full text-[#1E1D2D] focus:ring-[#255ECC] focus:border-[#255ECC] text-[16px] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8" type="text"> 
+             <input class="w-full text-[#1E1D2D] focus:ring-[#6435A5] focus:border-[#6435A5] text-[16px] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8" type="text"> 
              <img @click="closeInput(JK)" class="absolute cursor-pointer top-1/2 -translate-y-1/2 w-6 xxl:w-5 xl:w-4 right-5 xxl:right-4 xl:right-3" src="../../../assets/svg/close_grey.svg" alt=""> 
            </div> 
           </div>
@@ -62,7 +62,7 @@
       <div class="grid grid-cols-2 gap-8 xxl:gap-6 xl:gap-5" style="padding-bottom: 80px">
         <button @click="createCompilation" class="login__btn--bg text-white text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
           {{ language.dob_ob_1[24] }}</button>
-        <button @click="closeModal" class="bg-litepink text-[#255ECC]  text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
+        <button @click="closeModal" class="bg-litepink text-[#E84680] text-lg xxl:text-[15px] xl:text-[13px] leading-none py-5 xxl:py-4 xl:py-3 rounded-[6px]">
           {{ language.izbr_1[4] }}</button>
       </div>
     </div>
@@ -208,8 +208,8 @@ export default {
   left: auto;
   right: -180px;
   padding: 5px;
-  background: #255ECC;
-  color: white;
+  background: rgb(246 243 250);
+  color: rgb(100 53 165);
   border-radius: 5px;
   font-size: 10px;
   line-height: 12px;
@@ -227,8 +227,8 @@ export default {
     top: 24px;
     right: -42px;
     padding: 8px;
-    background: #255ECC;
-    color: white;
+    background: rgb(246 243 250);
+    color: rgb(100 53 165);
     border-radius: 5px;
     left: auto;
     font-size: 12px;

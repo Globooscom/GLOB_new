@@ -27,7 +27,7 @@
         <div class="relative mt-10 xxl:mt-8 xl:mt-6">
 
           <input :value="getLink()" readonly ref="text" disabled
-                 class="copy-link w-full text-[#1E1D2D] text-[16px] focus:ring-[#255ECC] focus:border-[#255ECC] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8"
+                 class="copy-link w-full text-[#1E1D2D] text-[16px] focus:ring-[#6435A5] focus:border-[#6435A5] xxl:text-[14px] xl:text-[12px] pl-5 xxl:pl-4 xl:pl-3 py-3 xxl:py-2.5 xl:py-2 leading-none rounded-[5px] border border-solid border-[#E5DFEE] pr-12 xxl:pr-10 xl:pr-8"
                  type="text">
           <span v-if="copy_link_hint" class="copy-link-text">Ссылка скопирована</span>
           <img @click="copy"

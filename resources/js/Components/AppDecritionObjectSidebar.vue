@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f5f5f5]   p-7 xxl:p-5 xl:p-5 h-fit mb-10 xxl:mb-8 xl:mb-6 rounded-[10px]">
+  <div class="bg-[#F6F3FA] p-7 xxl:p-5 xl:p-5 h-fit mb-10 xxl:mb-8 xl:mb-6 rounded-[10px]">
     <div class="text-sm xxl:text-xs xl:text-[10px] lg:text-[13px] pb-10 xxl:pb-8 xl:pb-6" v-if="news.length > 0">
       <span class="font-medium text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] pt-6 xxl:pt-5 xl:pt-4">{{
         language.ob[0] }}</span>
@@ -10,11 +10,11 @@
         }}</span>
         <p class="font-bold my-1 text-sm xxl:text-xs xl:text-[10px] lg:text-[13px]">{{ item.title }}</p>
         <p v-html="item.description.slice(0, 100)"></p>
-        <button class="text-[#255ECC] mt-1" @click="$emit('open-all-news')">{{ language.ob[13] }}</button>
+        <button class="text-[#6435A5] mt-1" @click="$emit('open-all-news')">{{ language.ob[13] }}</button>
       </div>
       <div class="flex justify-center w-full pt-5 xxl:pt-4 xl:pt-3">
         <button @click="$emit('open-all-news')" class="flex items-center gap-2.5 xxl:gap-2 xl:gap-1.5 animation__arrow">
-          <span class="text-[#255ECC] text-sm xxl:text-xs xl:text-[10px] lg:text-[13px]">{{ language.ob[14] }} ({{
+          <span class="text-[#6435A5] text-sm xxl:text-xs xl:text-[10px] lg:text-[13px]">{{ language.ob[14] }} ({{
             house.news.length }})</span>
           <img src="../../assets/svg/arrow_right_purple.svg" class="transition-all duration-300 h-4 xxl:h-3 xl:h-2.5"
             alt="Стелочка">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <button
-          class="w-full bg-[#f5f5f5]   text-[#6536A5] text-base xxl:text-sm xl:text-xs lg:text-[15px] rounded-[6px] py-4 xxl:py-3 xl:py-2.5"
+          class="w-full bg-[#F6F3FA] text-[#6536A5] text-base xxl:text-sm xl:text-xs lg:text-[15px] rounded-[6px] py-4 xxl:py-3 xl:py-2.5"
           v-on:click="openChat(house.user.id)">{{ language.ob[9] }}</button>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <div class="font-medium text-lg xxl:text-[15px] xl:text-[13px] lg:text-[16px] pb-5 xxl:pb-4 xl:pb-3 leading-none">{{
         language.ob[3] }}</div>
 
-      <div class="flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
+      <div class="flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]">
         <span
           class="leading-none text-center w-full text-[#6536A5] text-[16px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">
         </span>
@@ -80,14 +80,14 @@
         <div class="text-[14px] xxl:text-[12px] xl:text-[10px] leading-none pb-4 xxl:pb-3 xl:pb-2.5"><span
             class="text-[#8A8996]" v-if="item.link !== 'null' && item.link !== null">{{ language.dob_ob_2[7] }}:</span> {{
               item.link }}</div>
-        <div class=" flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
+        <div class=" flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
           v-if="item.phone">
           <img src="../../assets/svg/chat_tel_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
           <span
             class="leading-none text-center w-full text-[#6536A5] text-[16px] xxl:text-[14px] xl:text-[12px] lg:text-[15px]">{{
                item.phone }}</span>
         </div>
-        <div class="flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#f5f5f5]   p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
+        <div class="flex cursor-pointer mb-4 xxl:mb-3 xl:mb-2.5 bg-[#F6F3FA] p-4 xxl:p-3 xl:p-2.5 rounded-[5px]"
           v-if="item.email">
           <img src="../../assets/svg/chat_mail_purple.svg" class="w-4.5 xxl:w-4 xl:w-3.5" alt="">
           <span
