@@ -91,7 +91,7 @@ class AuthController extends Controller
         'subject' => "Проверочный код", // Обязательно
         'name' => "Globoos",
         'html' => $message, // Обязательно
-        'from' => "globoos.com@gmail.com", // Обязательно
+        'from' => "info@globoos.com", // Обязательно
         'to' => $request->email, // Обязательно
         'headers' => "[{ 'x-tag': 'my_newsletter_ids' }]",
         'text' => "Text version message"
